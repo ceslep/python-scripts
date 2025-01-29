@@ -1,0 +1,254 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "ANCHO",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "ANCHO = 800\nALTO = 600\n# Crear la ventana\nventana = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Evita los Obstáculos\")\n# Colores\nBLANCO = (255, 255, 255)\nNEGRO = (0, 0, 0)\nROJO = (255, 0, 0)\nVERDE = (0, 255, 0)",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "ALTO",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "ALTO = 600\n# Crear la ventana\nventana = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Evita los Obstáculos\")\n# Colores\nBLANCO = (255, 255, 255)\nNEGRO = (0, 0, 0)\nROJO = (255, 0, 0)\nVERDE = (0, 255, 0)\nAZUL = (0, 0, 255)",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "ventana",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "ventana = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Evita los Obstáculos\")\n# Colores\nBLANCO = (255, 255, 255)\nNEGRO = (0, 0, 0)\nROJO = (255, 0, 0)\nVERDE = (0, 255, 0)\nAZUL = (0, 0, 255)\n# Bucle principal del juego\nreloj = pygame.time.Clock()",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "BLANCO",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "BLANCO = (255, 255, 255)\nNEGRO = (0, 0, 0)\nROJO = (255, 0, 0)\nVERDE = (0, 255, 0)\nAZUL = (0, 0, 255)\n# Bucle principal del juego\nreloj = pygame.time.Clock()\n# Variables del jugador\njugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "NEGRO",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "NEGRO = (0, 0, 0)\nROJO = (255, 0, 0)\nVERDE = (0, 255, 0)\nAZUL = (0, 0, 255)\n# Bucle principal del juego\nreloj = pygame.time.Clock()\n# Variables del jugador\njugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "ROJO",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "ROJO = (255, 0, 0)\nVERDE = (0, 255, 0)\nAZUL = (0, 0, 255)\n# Bucle principal del juego\nreloj = pygame.time.Clock()\n# Variables del jugador\njugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "VERDE",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "VERDE = (0, 255, 0)\nAZUL = (0, 0, 255)\n# Bucle principal del juego\nreloj = pygame.time.Clock()\n# Variables del jugador\njugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5\n# Lista de obstáculos",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "AZUL",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "AZUL = (0, 0, 255)\n# Bucle principal del juego\nreloj = pygame.time.Clock()\n# Variables del jugador\njugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5\n# Lista de obstáculos\nobstaculos = []",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "reloj",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "reloj = pygame.time.Clock()\n# Variables del jugador\njugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5\n# Lista de obstáculos\nobstaculos = []\nvelocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "jugador_tamano",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "jugador_tamano = 50\njugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5\n# Lista de obstáculos\nobstaculos = []\nvelocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "jugador_x",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "jugador_x = ANCHO // 2 - jugador_tamano // 2\njugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5\n# Lista de obstáculos\nobstaculos = []\nvelocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0\nfuente = pygame.font.SysFont(None, 36)",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "jugador_y",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "jugador_y = ALTO - jugador_tamano - 10\nvelocidad_jugador = 5\n# Lista de obstáculos\nobstaculos = []\nvelocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0\nfuente = pygame.font.SysFont(None, 36)\n# Bucle principal",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "velocidad_jugador",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "velocidad_jugador = 5\n# Lista de obstáculos\nobstaculos = []\nvelocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0\nfuente = pygame.font.SysFont(None, 36)\n# Bucle principal\ncorriendo = True",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "obstaculos",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "obstaculos = []\nvelocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0\nfuente = pygame.font.SysFont(None, 36)\n# Bucle principal\ncorriendo = True\ncontador_frames = 0\nwhile corriendo:",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "velocidad_obstaculo",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "velocidad_obstaculo = 5\nfrecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0\nfuente = pygame.font.SysFont(None, 36)\n# Bucle principal\ncorriendo = True\ncontador_frames = 0\nwhile corriendo:\n    # Manejar eventos",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "frecuencia_obstaculos",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "frecuencia_obstaculos = 30  # Controla la frecuencia de aparición\n# Puntuación\npuntuacion = 0\nfuente = pygame.font.SysFont(None, 36)\n# Bucle principal\ncorriendo = True\ncontador_frames = 0\nwhile corriendo:\n    # Manejar eventos\n    for evento in pygame.event.get():",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "puntuacion",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "puntuacion = 0\nfuente = pygame.font.SysFont(None, 36)\n# Bucle principal\ncorriendo = True\ncontador_frames = 0\nwhile corriendo:\n    # Manejar eventos\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            corriendo = False",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "fuente",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "fuente = pygame.font.SysFont(None, 36)\n# Bucle principal\ncorriendo = True\ncontador_frames = 0\nwhile corriendo:\n    # Manejar eventos\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            corriendo = False\n    # Obtener todas las teclas presionadas",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "corriendo",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "corriendo = True\ncontador_frames = 0\nwhile corriendo:\n    # Manejar eventos\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            corriendo = False\n    # Obtener todas las teclas presionadas\n    teclas = pygame.key.get_pressed()\n    if teclas[pygame.K_LEFT] or teclas[pygame.K_a]:",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "contador_frames",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "contador_frames = 0\nwhile corriendo:\n    # Manejar eventos\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            corriendo = False\n    # Obtener todas las teclas presionadas\n    teclas = pygame.key.get_pressed()\n    if teclas[pygame.K_LEFT] or teclas[pygame.K_a]:\n        jugador_x -= velocidad_jugador",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "texto_fin",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "texto_fin = fuente.render(\"¡Juego Terminado!\", True, NEGRO)\ntexto_puntuacion_final = fuente.render(f\"Puntuación Final: {puntuacion}\", True, NEGRO)\nventana.blit(texto_fin, (ANCHO // 2 - texto_fin.get_width() // 2, ALTO // 2 - 50))\nventana.blit(texto_puntuacion_final, (ANCHO // 2 - texto_puntuacion_final.get_width() // 2, ALTO // 2))\npygame.display.flip()\n# Esperar unos segundos antes de cerrar\npygame.time.wait(3000)\n# Finalizar Pygame\npygame.quit()\nsys.exit()",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "texto_puntuacion_final",
+        "kind": 5,
+        "importPath": "pgame",
+        "description": "pgame",
+        "peekOfCode": "texto_puntuacion_final = fuente.render(f\"Puntuación Final: {puntuacion}\", True, NEGRO)\nventana.blit(texto_fin, (ANCHO // 2 - texto_fin.get_width() // 2, ALTO // 2 - 50))\nventana.blit(texto_puntuacion_final, (ANCHO // 2 - texto_puntuacion_final.get_width() // 2, ALTO // 2))\npygame.display.flip()\n# Esperar unos segundos antes de cerrar\npygame.time.wait(3000)\n# Finalizar Pygame\npygame.quit()\nsys.exit()",
+        "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "datos",
+        "kind": 5,
+        "importPath": "vocabulario",
+        "description": "vocabulario",
+        "peekOfCode": "datos = {\n    \"Inglés\": [\n        \"Variable\", \"Function\", \"Loop\", \"List\", \"Tuple\", \"Dictionary\",\n        \"String\", \"Integer\", \"Float\", \"Boolean\", \"If statement\", \"Else\",\n        \"Elif\", \"Import\", \"Module\", \"Package\", \"Class\", \"Object\",\n        \"Method\", \"Attribute\", \"Exception\", \"Try\", \"Except\", \"Finally\",\n        \"While loop\", \"For loop\", \"Break\", \"Continue\", \"Pass\", \"Lambda\",\n        \"Decorator\", \"Generator\", \"Comprehension\", \"Indentation\",\n        \"Syntax\", \"Argument\", \"Parameter\", \"Return\", \"Namespace\",\n        \"Scope\", \"Global variable\", \"Local variable\", \"Docstring\",",
+        "detail": "vocabulario",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "vocabulario",
+        "description": "vocabulario",
+        "peekOfCode": "df = pd.DataFrame(datos)\n# Exportar a un archivo Excel\ndf.to_excel(\"Vocabulario_Python.xlsx\", index=False)\nprint(\"El archivo 'Vocabulario_Python.xlsx' ha sido creado exitosamente.\")",
+        "detail": "vocabulario",
+        "documentation": {}
+    }
+]
