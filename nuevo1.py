@@ -32,21 +32,22 @@ while running:
 
     if keys[pygame.K_w] or keys[pygame.K_UP]:
         delta_y = (0,-1*constantes.DELTA) [player_pos.y - constantes.JUGADOR_TAMANO > 0]
-        player_pos.y -= 300 * dt
+     #   player_pos.y -= 300 * dt
     if keys[pygame.K_s] or keys[pygame.K_DOWN]:
         delta_y = (0,1*constantes.DELTA) [player_pos.y - constantes.JUGADOR_TAMANO > 0]
-        player_pos.y += 300 * dt
+     #   player_pos.y += 300 * dt
     if keys[pygame.K_a] or keys[pygame.K_LEFT]:
         delta_x=(0,1*constantes.DELTA) [player_pos.x - constantes.JUGADOR_TAMANO > 0]
-        player_pos.x -= 300 * dt
+     #   player_pos.x -= 300 * dt
     if keys[pygame.K_d] or keys[pygame.K_RIGHT]:
         delta_x=(0,-1*constantes.DELTA) [player_pos.x - constantes.JUGADOR_TAMANO > 0]
-        player_pos.x += 300 * dt
+     #   player_pos.x += 300 * dt
 
 
 
-    player_pos.x = max(constantes.JUGADOR_TAMANO, min(player_pos.x, constantes.ANCHO-constantes.JUGADOR_TAMANO))-delta_x
-    player_pos.y = max(constantes.JUGADOR_TAMANO-delta_y, min(player_pos.y, constantes.ALTO-constantes.JUGADOR_TAMANO))+delta_y
+    player_pos.x = max(constantes.JUGADOR_TAMANO+1, min(player_pos.x, constantes.ANCHO-constantes.JUGADOR_TAMANO))-delta_x
+    player_pos.y = max(constantes.JUGADOR_TAMANO+1-delta_y, min(player_pos.y, constantes.ALTO-constantes.JUGADOR_TAMANO))+delta_y
     pygame.display.flip()
     dt = clock.tick(60)/1000
+    print(dt)
 pygame.quit()
