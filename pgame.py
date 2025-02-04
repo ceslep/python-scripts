@@ -32,7 +32,7 @@ velocidad_jugador = 5
 # Lista de obstáculos
 obstaculos = []
 velocidad_obstaculo = 5
-frecuencia_obstaculos = 30  # Controla la frecuencia de aparición
+frecuencia_obstaculos = 50  # Controla la frecuencia de aparición
 
 # Puntuación
 puntuacion = 0
@@ -79,7 +79,7 @@ while corriendo:
     obstaculos = [obs for obs in obstaculos if obs[1] < ALTO]
 
     # Detectar colisiones
-    jugador_rect = pygame.Rect(jugador_x, jugador_y, jugador_tamano, jugador_tamano)
+    jugador_rect = pygame.draw.circle(ventana, AZUL, (jugador_x + jugador_tamano // 2, jugador_y + jugador_tamano // 2), jugador_tamano // 2)
     for obs in obstaculos:
         obstaculo_rect = pygame.Rect(obs[0], obs[1], jugador_tamano, jugador_tamano)
         if jugador_rect.colliderect(obstaculo_rect):
