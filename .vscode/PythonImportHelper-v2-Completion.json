@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "constantes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "constantes",
+        "description": "constantes",
+        "detail": "constantes",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -38,28 +47,28 @@
     {
         "label": "ANCHO",
         "kind": 5,
-        "importPath": "nuevo1",
-        "description": "nuevo1",
-        "peekOfCode": "ANCHO = 800\nALTO = 600\nJUGADOR_TAMANO = 40\nDELTA=10\npygame.init()\nscreen = pygame.display.set_mode((ANCHO, ALTO))\nclock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0",
-        "detail": "nuevo1",
+        "importPath": "constantes",
+        "description": "constantes",
+        "peekOfCode": "ANCHO = 800\nALTO = 600\nJUGADOR_TAMANO = 20\nDELTA=10",
+        "detail": "constantes",
         "documentation": {}
     },
     {
         "label": "ALTO",
         "kind": 5,
-        "importPath": "nuevo1",
-        "description": "nuevo1",
-        "peekOfCode": "ALTO = 600\nJUGADOR_TAMANO = 40\nDELTA=10\npygame.init()\nscreen = pygame.display.set_mode((ANCHO, ALTO))\nclock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0",
-        "detail": "nuevo1",
+        "importPath": "constantes",
+        "description": "constantes",
+        "peekOfCode": "ALTO = 600\nJUGADOR_TAMANO = 20\nDELTA=10",
+        "detail": "constantes",
         "documentation": {}
     },
     {
         "label": "JUGADOR_TAMANO",
         "kind": 5,
-        "importPath": "nuevo1",
-        "description": "nuevo1",
-        "peekOfCode": "JUGADOR_TAMANO = 40\nDELTA=10\npygame.init()\nscreen = pygame.display.set_mode((ANCHO, ALTO))\nclock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0",
-        "detail": "nuevo1",
+        "importPath": "constantes",
+        "description": "constantes",
+        "peekOfCode": "JUGADOR_TAMANO = 20\nDELTA=10",
+        "detail": "constantes",
         "documentation": {}
     },
     {
@@ -67,7 +76,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "screen = pygame.display.set_mode((ANCHO, ALTO))\nclock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:",
+        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:",
         "detail": "nuevo1",
         "documentation": {}
     },
