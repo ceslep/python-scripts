@@ -1,10 +1,20 @@
 {
     "cSpell.words": [
+        "Abajo",
         "ANCHO",
+        "Arriba",
+        "blit",
         "constantes",
+        "Derecha",
+        "Dibujamos",
+        "izquierda",
         "JUGADOR",
         "KEYUP",
+        "Lógica",
+        "mirando",
         "movimiento",
-        "TAMANO"
+        "Obtener",
+        "TAMANO",
+        "velocidad"
     ]
 }

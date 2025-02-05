@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "constantes",
         "description": "constantes",
-        "peekOfCode": "ANCHO = 800\nALTO = 600\nJUGADOR_TAMANO = 20\nDELTA=10",
+        "peekOfCode": "ANCHO = 800\nALTO = 600\nJUGADOR_TAMANO = 90\nJUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "constantes",
         "description": "constantes",
-        "peekOfCode": "ALTO = 600\nJUGADOR_TAMANO = 20\nDELTA=10",
+        "peekOfCode": "ALTO = 600\nJUGADOR_TAMANO = 90\nJUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
         "documentation": {}
     },
@@ -67,7 +67,16 @@
         "kind": 5,
         "importPath": "constantes",
         "description": "constantes",
-        "peekOfCode": "JUGADOR_TAMANO = 20\nDELTA=10",
+        "peekOfCode": "JUGADOR_TAMANO = 90\nJUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
+        "detail": "constantes",
+        "documentation": {}
+    },
+    {
+        "label": "JUGADOR_SPEED",
+        "kind": 5,
+        "importPath": "constantes",
+        "description": "constantes",
+        "peekOfCode": "JUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
         "documentation": {}
     },
@@ -76,7 +85,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:",
+        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\n# Cargar los sprites de animación en una lista\nplayer_sprites = [\n    pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    for i in range(6)  # Ajusta el número de imágenes\n]\n# Escalar las imágenes (opcional)\nplayer_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -85,16 +94,25 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "clock = pygame.time.Clock()\nrunning = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:\n    for event in pygame.event.get():",
+        "peekOfCode": "clock = pygame.time.Clock()\n# Cargar los sprites de animación en una lista\nplayer_sprites = [\n    pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    for i in range(6)  # Ajusta el número de imágenes\n]\n# Escalar las imágenes (opcional)\nplayer_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador\nplayer_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "running",
+        "label": "player_sprites",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "running = True\nplayer_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "peekOfCode": "player_sprites = [\n    pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    for i in range(6)  # Ajusta el número de imágenes\n]\n# Escalar las imágenes (opcional)\nplayer_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador\nplayer_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)\nprint(player_pos)\nvelocidad = constantes.VELOCIDAD  ",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "player_sprites",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "player_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador\nplayer_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)\nprint(player_pos)\nvelocidad = constantes.VELOCIDAD  \nframe_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -103,34 +121,61 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "player_pos = pygame.Vector2(screen.get_width()/2, screen.get_height()/2)\ndt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False",
+        "peekOfCode": "player_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)\nprint(player_pos)\nvelocidad = constantes.VELOCIDAD  \nframe_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "dt",
+        "label": "velocidad",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "dt = 0\nmovimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n        if event.type==pygame.KEYUP:",
+        "peekOfCode": "velocidad = constantes.VELOCIDAD  \nframe_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "movimiento_x",
+        "label": "frame_index",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "movimiento_x = 0\nmovimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n        if event.type==pygame.KEYUP:\n            delta_x=0",
+        "peekOfCode": "frame_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "movimiento_y",
+        "label": "animation_speed",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "movimiento_y = 0\ndelta_x=0\ndelta_y=0\nwhile running:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n        if event.type==pygame.KEYUP:\n            delta_x=0\n            delta_y=0",
+        "peekOfCode": "animation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "frame_counter",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "frame_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "mirando_izquierda",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "mirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "running",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "running = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False\n    if keys[pygame.K_a] or keys[pygame.K_LEFT]:  # Izquierda",
         "detail": "nuevo1",
         "documentation": {}
     },
