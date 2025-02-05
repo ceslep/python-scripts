@@ -85,7 +85,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\n# Cargar los sprites de animación en una lista\nplayer_sprites = [\n    pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    for i in range(6)  # Ajusta el número de imágenes\n]\n# Escalar las imágenes (opcional)\nplayer_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador",
+        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\n# Cargar y escalar los sprites correctamente\nplayer_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -94,7 +94,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "clock = pygame.time.Clock()\n# Cargar los sprites de animación en una lista\nplayer_sprites = [\n    pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    for i in range(6)  # Ajusta el número de imágenes\n]\n# Escalar las imágenes (opcional)\nplayer_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador\nplayer_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)",
+        "peekOfCode": "clock = pygame.time.Clock()\n# Cargar y escalar los sprites correctamente\nplayer_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2, ",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -103,16 +103,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "player_sprites = [\n    pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    for i in range(6)  # Ajusta el número de imágenes\n]\n# Escalar las imágenes (opcional)\nplayer_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador\nplayer_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)\nprint(player_pos)\nvelocidad = constantes.VELOCIDAD  ",
-        "detail": "nuevo1",
-        "documentation": {}
-    },
-    {
-        "label": "player_sprites",
-        "kind": 5,
-        "importPath": "nuevo1",
-        "description": "nuevo1",
-        "peekOfCode": "player_sprites = [pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO)) for img in player_sprites]\n# Variables del jugador\nplayer_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)\nprint(player_pos)\nvelocidad = constantes.VELOCIDAD  \nframe_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True",
+        "peekOfCode": "player_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2, \n    (constantes.ALTO - constantes.JUGADOR_TAMANO) // 2\n)",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -121,7 +112,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "player_pos = pygame.Vector2(constantes.ANCHO // 2-constantes.JUGADOR_TAMANO//2, constantes.ALTO // 2-constantes.JUGADOR_TAMANO//2)\nprint(player_pos)\nvelocidad = constantes.VELOCIDAD  \nframe_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS",
+        "peekOfCode": "player_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2, \n    (constantes.ALTO - constantes.JUGADOR_TAMANO) // 2\n)\nvelocidad = constantes.VELOCIDAD  \nframe_index = 0  \nanimation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -130,7 +121,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "velocidad = constantes.VELOCIDAD  \nframe_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "peekOfCode": "velocidad = constantes.VELOCIDAD  \nframe_index = 0  \nanimation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -139,7 +130,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "frame_index = 0  # Índice del sprite actual\nanimation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False",
+        "peekOfCode": "frame_index = 0  \nanimation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -148,7 +139,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "animation_speed = constantes.JUGADOR_SPEED  # Velocidad de cambio de animación\nframe_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento",
+        "peekOfCode": "animation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -157,7 +148,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "frame_counter = 0  # Contador para el cambio de animación\nmirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()",
+        "peekOfCode": "frame_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -166,7 +157,34 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "mirando_izquierda = False  # Dirección inicial\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False",
+        "peekOfCode": "mirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "pared_rect",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "pared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "pared_surf",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "pared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento",
+        "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "pared_mask",
+        "kind": 5,
+        "importPath": "nuevo1",
+        "description": "nuevo1",
+        "peekOfCode": "pared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -175,7 +193,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "running = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False\n    if keys[pygame.K_a] or keys[pygame.K_LEFT]:  # Izquierda",
+        "peekOfCode": "running = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False\n    nueva_pos = player_pos.copy()",
         "detail": "nuevo1",
         "documentation": {}
     },
