@@ -9,15 +9,6 @@
         "documentation": {}
     },
     {
-        "label": "constantes",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "constantes",
-        "description": "constantes",
-        "detail": "constantes",
-        "documentation": {}
-    },
-    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -27,12 +18,30 @@
         "documentation": {}
     },
     {
+        "label": "constantes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "constantes",
+        "description": "constantes",
+        "detail": "constantes",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "turtle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle",
+        "description": "turtle",
+        "detail": "turtle",
         "documentation": {}
     },
     {
@@ -85,7 +94,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\n# Cargar y escalar los sprites correctamente\nplayer_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(",
+        "peekOfCode": "screen = pygame.display.set_mode((constantes.ANCHO, constantes.ALTO))\nclock = pygame.time.Clock()\n# Cargar y escalar los sprites correctamente\nplayer_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(\n        f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(\n        img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -94,7 +103,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "clock = pygame.time.Clock()\n# Cargar y escalar los sprites correctamente\nplayer_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2, ",
+        "peekOfCode": "clock = pygame.time.Clock()\n# Cargar y escalar los sprites correctamente\nplayer_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(\n        f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(\n        img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -103,7 +112,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "player_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2, \n    (constantes.ALTO - constantes.JUGADOR_TAMANO) // 2\n)",
+        "peekOfCode": "player_sprites = []\nfor i in range(6):  # Suponiendo que tienes 6 imágenes\n    img = pygame.image.load(\n        f\"assets/Walking/0_Fallen_Angels_Walking_00{i}.png\").convert_alpha()\n    img = pygame.transform.scale(\n        img, (constantes.JUGADOR_TAMANO, constantes.JUGADOR_TAMANO))  # Escalar correctamente\n    player_sprites.append(img)  # Guardar imagen escalada en la lista\n# 🎯 **Centrar el jugador en la pantalla**\nplayer_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2,",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -112,7 +121,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "player_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2, \n    (constantes.ALTO - constantes.JUGADOR_TAMANO) // 2\n)\nvelocidad = constantes.VELOCIDAD  \nframe_index = 0  \nanimation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo",
+        "peekOfCode": "player_pos = pygame.Vector2(\n    (constantes.ANCHO - constantes.JUGADOR_TAMANO) // 2,\n    (constantes.ALTO - constantes.JUGADOR_TAMANO) // 2\n)\nvelocidad = constantes.VELOCIDAD\nframe_index = 0\nanimation_speed = constantes.JUGADOR_SPEED\nframe_counter = 0\nmirando_izquierda = False\n# 📌 **Generar obstáculos asegurando que no aparezcan cerca del jugador**",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -121,7 +130,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "velocidad = constantes.VELOCIDAD  \nframe_index = 0  \nanimation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja",
+        "peekOfCode": "velocidad = constantes.VELOCIDAD\nframe_index = 0\nanimation_speed = constantes.JUGADOR_SPEED\nframe_counter = 0\nmirando_izquierda = False\n# 📌 **Generar obstáculos asegurando que no aparezcan cerca del jugador**\njugador_radio_seguro = 150  # Distancia mínima desde el jugador\nobstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -130,7 +139,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "frame_index = 0  \nanimation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión",
+        "peekOfCode": "frame_index = 0\nanimation_speed = constantes.JUGADOR_SPEED\nframe_counter = 0\nmirando_izquierda = False\n# 📌 **Generar obstáculos asegurando que no aparezcan cerca del jugador**\njugador_radio_seguro = 150  # Distancia mínima desde el jugador\nobstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:\n        obs_x = random.randint(50, constantes.ANCHO - 50)",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -139,7 +148,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "animation_speed = constantes.JUGADOR_SPEED  \nframe_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True",
+        "peekOfCode": "animation_speed = constantes.JUGADOR_SPEED\nframe_counter = 0\nmirando_izquierda = False\n# 📌 **Generar obstáculos asegurando que no aparezcan cerca del jugador**\njugador_radio_seguro = 150  # Distancia mínima desde el jugador\nobstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:\n        obs_x = random.randint(50, constantes.ANCHO - 50)\n        obs_y = random.randint(50, constantes.ALTO - 50)",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -148,7 +157,7 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "frame_counter = 0  \nmirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:",
+        "peekOfCode": "frame_counter = 0\nmirando_izquierda = False\n# 📌 **Generar obstáculos asegurando que no aparezcan cerca del jugador**\njugador_radio_seguro = 150  # Distancia mínima desde el jugador\nobstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:\n        obs_x = random.randint(50, constantes.ANCHO - 50)\n        obs_y = random.randint(50, constantes.ALTO - 50)\n        # Calcular distancia al jugador",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -157,34 +166,34 @@
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "mirando_izquierda = False  \n# Definir una pared como un rectángulo\npared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS",
+        "peekOfCode": "mirando_izquierda = False\n# 📌 **Generar obstáculos asegurando que no aparezcan cerca del jugador**\njugador_radio_seguro = 150  # Distancia mínima desde el jugador\nobstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:\n        obs_x = random.randint(50, constantes.ANCHO - 50)\n        obs_y = random.randint(50, constantes.ALTO - 50)\n        # Calcular distancia al jugador\n        distancia = ((obs_x - player_pos.x) ** 2 + (obs_y - player_pos.y) ** 2) ** 0.5",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "pared_rect",
+        "label": "jugador_radio_seguro",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "pared_rect = pygame.Rect(0, 200, 100, 100)\n# Crear una máscara para la pared (suponiendo que es un rectángulo lleno)\npared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "peekOfCode": "jugador_radio_seguro = 150  # Distancia mínima desde el jugador\nobstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:\n        obs_x = random.randint(50, constantes.ANCHO - 50)\n        obs_y = random.randint(50, constantes.ALTO - 50)\n        # Calcular distancia al jugador\n        distancia = ((obs_x - player_pos.x) ** 2 + (obs_y - player_pos.y) ** 2) ** 0.5\n        if distancia > jugador_radio_seguro:  # Si el obstáculo está suficientemente lejos\n            if random.choice([True, False]):",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "pared_surf",
+        "label": "obstaculos",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "pared_surf = pygame.Surface((100, 100))  \npared_surf.fill(\"red\")  # La superficie de la pared es roja\npared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento",
+        "peekOfCode": "obstaculos = []\nfor _ in range(5):  # Número de obstáculos\n    while True:\n        obs_x = random.randint(50, constantes.ANCHO - 50)\n        obs_y = random.randint(50, constantes.ALTO - 50)\n        # Calcular distancia al jugador\n        distancia = ((obs_x - player_pos.x) ** 2 + (obs_y - player_pos.y) ** 2) ** 0.5\n        if distancia > jugador_radio_seguro:  # Si el obstáculo está suficientemente lejos\n            if random.choice([True, False]):\n                ancho = random.randint(50, 120)",
         "detail": "nuevo1",
         "documentation": {}
     },
     {
-        "label": "pared_mask",
+        "label": "obstaculo_masks",
         "kind": 5,
         "importPath": "nuevo1",
         "description": "nuevo1",
-        "peekOfCode": "pared_mask = pygame.mask.from_surface(pared_surf)  # Crear la máscara de colisión\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False",
+        "peekOfCode": "obstaculo_masks = [pygame.mask.Mask((obs[1].width, obs[1].height), fill=True) if obs[0] == \"rect\" else None for obs in obstaculos]\nrunning = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False",
         "detail": "nuevo1",
         "documentation": {}
     },
@@ -393,6 +402,60 @@
         "description": "pgame",
         "peekOfCode": "texto_puntuacion_final = fuente.render(f\"Puntuación Final: {puntuacion}\", True, NEGRO)\nventana.blit(texto_fin, (ANCHO // 2 - texto_fin.get_width() // 2, ALTO // 2 - 50))\nventana.blit(texto_puntuacion_final, (ANCHO // 2 - texto_puntuacion_final.get_width() // 2, ALTO // 2))\npygame.display.flip()\n# Esperar unos segundos antes de cerrar\npygame.time.wait(3000)\n# Finalizar Pygame\npygame.quit()\nsys.exit()",
         "detail": "pgame",
+        "documentation": {}
+    },
+    {
+        "label": "pantalla",
+        "kind": 5,
+        "importPath": "pturtle",
+        "description": "pturtle",
+        "peekOfCode": "pantalla = turtle.Screen()\npantalla.title(\"Polígono con líneas al centro\")\ntortuga = turtle.Turtle()\ntortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\n# Parámetros del polígono\nn_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices",
+        "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "tortuga",
+        "kind": 5,
+        "importPath": "pturtle",
+        "description": "pturtle",
+        "peekOfCode": "tortuga = turtle.Turtle()\ntortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\n# Parámetros del polígono\nn_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO",
+        "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "n_lados",
+        "kind": 5,
+        "importPath": "pturtle",
+        "description": "pturtle",
+        "peekOfCode": "n_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado",
+        "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "distancia",
+        "kind": 5,
+        "importPath": "pturtle",
+        "description": "pturtle",
+        "peekOfCode": "distancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)",
+        "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "angulo",
+        "kind": 5,
+        "importPath": "pturtle",
+        "description": "pturtle",
+        "peekOfCode": "angulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)\n    tortuga.right(angulo)",
+        "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "vertices",
+        "kind": 5,
+        "importPath": "pturtle",
+        "description": "pturtle",
+        "peekOfCode": "vertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)\n    tortuga.right(angulo)\n# CAMBIAMOS DE COLOR PARA LAS LÍNEAS AL CENTRO\ntortuga.color(\"red\")",
+        "detail": "pturtle",
         "documentation": {}
     },
     {
