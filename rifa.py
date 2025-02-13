@@ -14,6 +14,12 @@ section.bottom_margin = Inches(0.5)
 section.left_margin = Inches(0.5)
 section.right_margin = Inches(0.5)
 
+# Agregar la imagen en la parte superior izquierda
+img_paragraph = document.add_paragraph()
+img_paragraph.alignment = 0  # Alineación izquierda
+img_run = img_paragraph.add_run()
+img_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites
+
 # Agregar el encabezado centrado
 header_paragraph = document.add_paragraph()
 header_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha
@@ -23,6 +29,7 @@ header_run = header_paragraph.add_run(
 header_run.bold = True
 header_run.font.size = Pt(14)
 
+# Resto del código original...
 # Agregar información del premio centrada
 prize_paragraph = document.add_paragraph()
 prize_paragraph.alignment = 1

@@ -18,20 +18,20 @@
         "documentation": {}
     },
     {
-        "label": "preguntas",
-        "importPath": "preguntas",
-        "description": "preguntas",
-        "isExtraImport": true,
-        "detail": "preguntas",
-        "documentation": {}
-    },
-    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "random",
         "description": "random",
         "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "preguntas",
+        "importPath": "preguntas",
+        "description": "preguntas",
+        "isExtraImport": true,
+        "detail": "preguntas",
         "documentation": {}
     },
     {
@@ -127,6 +127,159 @@
         "description": "constantes",
         "peekOfCode": "JUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
+        "documentation": {}
+    },
+    {
+        "label": "Cell",
+        "kind": 6,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "class Cell:\n    def __init__(self, row, col):\n        self.row = row\n        self.col = col\n        self.walls = {'top': True, 'right': True, 'bottom': True, 'left': True}\n        self.visited = False\nclass Maze:\n    def __init__(self, rows, cols):\n        self.rows = rows\n        self.cols = cols",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "Maze",
+        "kind": 6,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "class Maze:\n    def __init__(self, rows, cols):\n        self.rows = rows\n        self.cols = cols\n        self.grid = [[Cell(row, col) for col in range(cols)] for row in range(rows)]\n        self.generate()\n    def generate(self):\n        stack = []\n        current = self.grid[0][0]\n        current.visited = True",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "class Player:\n    def __init__(self, row, col):\n        self.row = row\n        self.col = col\n        self.size = CELL_SIZE // 2\n        self.x = col * CELL_SIZE + (CELL_SIZE - self.size) // 2\n        self.y = row * CELL_SIZE + (CELL_SIZE - self.size) // 2\n    def move(self, direction, maze):\n        current_cell = maze.grid[self.row][self.col]\n        new_row, new_col = self.row, self.col",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "draw_exit",
+        "kind": 2,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "def draw_exit(surface, row, col):\n    x = col * CELL_SIZE + (CELL_SIZE - 20) // 2\n    y = row * CELL_SIZE + (CELL_SIZE - 20) // 2\n    pygame.draw.rect(surface, GREEN, (x, y, 20, 20))\ndef game():\n    current_level = 1\n    total_score = 0\n    max_levels = 10\n    while current_level <= max_levels:\n        maze = Maze(MAZE_ROWS, MAZE_COLS)",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "game",
+        "kind": 2,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "def game():\n    current_level = 1\n    total_score = 0\n    max_levels = 10\n    while current_level <= max_levels:\n        maze = Maze(MAZE_ROWS, MAZE_COLS)\n        player = Player(0, 0)\n        exit_row = MAZE_ROWS - 1\n        exit_col = MAZE_COLS - 1\n        running = True",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN_WIDTH",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "SCREEN_WIDTH = 800\nSCREEN_HEIGHT = 600\nCELL_SIZE = 40\nMAZE_ROWS = SCREEN_HEIGHT // CELL_SIZE\nMAZE_COLS = SCREEN_WIDTH // CELL_SIZE\n# Colores\nBLACK = (0, 0, 0)\nWHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN_HEIGHT",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "SCREEN_HEIGHT = 600\nCELL_SIZE = 40\nMAZE_ROWS = SCREEN_HEIGHT // CELL_SIZE\nMAZE_COLS = SCREEN_WIDTH // CELL_SIZE\n# Colores\nBLACK = (0, 0, 0)\nWHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "CELL_SIZE",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "CELL_SIZE = 40\nMAZE_ROWS = SCREEN_HEIGHT // CELL_SIZE\nMAZE_COLS = SCREEN_WIDTH // CELL_SIZE\n# Colores\nBLACK = (0, 0, 0)\nWHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "MAZE_ROWS",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "MAZE_ROWS = SCREEN_HEIGHT // CELL_SIZE\nMAZE_COLS = SCREEN_WIDTH // CELL_SIZE\n# Colores\nBLACK = (0, 0, 0)\nWHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "MAZE_COLS",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "MAZE_COLS = SCREEN_WIDTH // CELL_SIZE\n# Colores\nBLACK = (0, 0, 0)\nWHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "BLACK",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "BLACK = (0, 0, 0)\nWHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")\nclock = pygame.time.Clock()\nclass Cell:",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "WHITE = (255, 255, 255)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")\nclock = pygame.time.Clock()\nclass Cell:\n    def __init__(self, row, col):",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "RED",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "RED = (255, 0, 0)\nGREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")\nclock = pygame.time.Clock()\nclass Cell:\n    def __init__(self, row, col):\n        self.row = row",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "GREEN",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "GREEN = (0, 255, 0)\nBLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")\nclock = pygame.time.Clock()\nclass Cell:\n    def __init__(self, row, col):\n        self.row = row\n        self.col = col",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "BLUE",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "BLUE = (0, 0, 255)\n# Inicializar pantalla\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")\nclock = pygame.time.Clock()\nclass Cell:\n    def __init__(self, row, col):\n        self.row = row\n        self.col = col\n        self.walls = {'top': True, 'right': True, 'bottom': True, 'left': True}",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Laberinto de 10 Niveles\")\nclock = pygame.time.Clock()\nclass Cell:\n    def __init__(self, row, col):\n        self.row = row\n        self.col = col\n        self.walls = {'top': True, 'right': True, 'bottom': True, 'left': True}\n        self.visited = False\nclass Maze:",
+        "detail": "mazes",
+        "documentation": {}
+    },
+    {
+        "label": "clock",
+        "kind": 5,
+        "importPath": "mazes",
+        "description": "mazes",
+        "peekOfCode": "clock = pygame.time.Clock()\nclass Cell:\n    def __init__(self, row, col):\n        self.row = row\n        self.col = col\n        self.walls = {'top': True, 'right': True, 'bottom': True, 'left': True}\n        self.visited = False\nclass Maze:\n    def __init__(self, rows, cols):\n        self.rows = rows",
+        "detail": "mazes",
         "documentation": {}
     },
     {
@@ -692,7 +845,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "document = Document()\n# Configurar tamaño de página y márgenes para tamaño carta (8.5 x 11 pulgadas)\nsection = document.sections[0]\nsection.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado",
+        "peekOfCode": "document = Document()\n# Configurar tamaño de página y márgenes para tamaño carta (8.5 x 11 pulgadas)\nsection = document.sections[0]\nsection.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda",
         "detail": "rifa",
         "documentation": {}
     },
@@ -701,7 +854,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section = document.sections[0]\nsection.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha",
+        "peekOfCode": "section = document.sections[0]\nsection.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda",
         "detail": "rifa",
         "documentation": {}
     },
@@ -710,7 +863,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(",
+        "peekOfCode": "section.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()",
         "detail": "rifa",
         "documentation": {}
     },
@@ -719,7 +872,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"",
+        "peekOfCode": "section.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites",
         "detail": "rifa",
         "documentation": {}
     },
@@ -728,7 +881,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)",
+        "peekOfCode": "section.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado",
         "detail": "rifa",
         "documentation": {}
     },
@@ -737,7 +890,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True",
+        "peekOfCode": "section.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()",
         "detail": "rifa",
         "documentation": {}
     },
@@ -746,7 +899,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)",
+        "peekOfCode": "section.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha",
         "detail": "rifa",
         "documentation": {}
     },
@@ -755,7 +908,34 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "section.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada",
+        "peekOfCode": "section.right_margin = Inches(0.5)\n# Agregar la imagen en la parte superior izquierda\nimg_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "img_paragraph",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "img_paragraph = document.add_paragraph()\nimg_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "img_paragraph.alignment",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "img_paragraph.alignment = 0  # Alineación izquierda\nimg_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "img_run",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "img_run = img_paragraph.add_run()\nimg_run.add_picture('assets/pollo.jpg', width=Inches(1))  # Ajusta el tamaño según necesites\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)",
         "detail": "rifa",
         "documentation": {}
     },
@@ -764,7 +944,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "header_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1",
+        "peekOfCode": "header_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Resto del código original...\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()",
         "detail": "rifa",
         "documentation": {}
     },
@@ -773,7 +953,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "header_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")",
+        "peekOfCode": "header_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Resto del código original...\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1",
         "detail": "rifa",
         "documentation": {}
     },
@@ -782,7 +962,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "header_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True",
+        "peekOfCode": "header_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Resto del código original...\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")",
         "detail": "rifa",
         "documentation": {}
     },
@@ -791,7 +971,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "header_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()",
+        "peekOfCode": "header_run.bold = True\nheader_run.font.size = Pt(14)\n# Resto del código original...\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar",
         "detail": "rifa",
         "documentation": {}
     },
@@ -800,7 +980,7 @@
         "kind": 5,
         "importPath": "rifa",
         "description": "rifa",
-        "peekOfCode": "header_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------",
+        "peekOfCode": "header_run.font.size = Pt(14)\n# Resto del código original...\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()",
         "detail": "rifa",
         "documentation": {}
     },
