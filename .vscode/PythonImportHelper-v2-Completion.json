@@ -9,6 +9,23 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "preguntas",
+        "importPath": "preguntas",
+        "description": "preguntas",
+        "isExtraImport": true,
+        "detail": "preguntas",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -27,21 +44,44 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
         "label": "turtle",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "turtle",
         "description": "turtle",
         "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "docx",
+        "description": "docx",
+        "isExtraImport": true,
+        "detail": "docx",
+        "documentation": {}
+    },
+    {
+        "label": "Inches",
+        "importPath": "docx.shared",
+        "description": "docx.shared",
+        "isExtraImport": true,
+        "detail": "docx.shared",
+        "documentation": {}
+    },
+    {
+        "label": "Pt",
+        "importPath": "docx.shared",
+        "description": "docx.shared",
+        "isExtraImport": true,
+        "detail": "docx.shared",
+        "documentation": {}
+    },
+    {
+        "label": "WD_ROW_HEIGHT_RULE",
+        "importPath": "docx.enum.table",
+        "description": "docx.enum.table",
+        "isExtraImport": true,
+        "detail": "docx.enum.table",
         "documentation": {}
     },
     {
@@ -87,6 +127,186 @@
         "description": "constantes",
         "peekOfCode": "JUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
+        "documentation": {}
+    },
+    {
+        "label": "draw_text",
+        "kind": 2,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "def draw_text(text, font, color, surface, x, y):\n    \"\"\"Dibuja texto centrado en (x, y).\"\"\"\n    render_text = font.render(text, True, color)\n    rect = render_text.get_rect()\n    rect.center = (x, y)\n    surface.blit(render_text, rect)\ndef mostrar_marcador(score1, score2, turno):\n    \"\"\"Dibuja el marcador de puntajes y el turno actual.\"\"\"\n    marcador_text = f\"Equipo 1: {score1}  |  Equipo 2: {score2}\"\n    turno_text = f\"Turno de: Equipo {turno}\"",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "mostrar_marcador",
+        "kind": 2,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "def mostrar_marcador(score1, score2, turno):\n    \"\"\"Dibuja el marcador de puntajes y el turno actual.\"\"\"\n    marcador_text = f\"Equipo 1: {score1}  |  Equipo 2: {score2}\"\n    turno_text = f\"Turno de: Equipo {turno}\"\n    text_surface_marcador = FONT_SCORE.render(marcador_text, True, BLACK)\n    SCREEN.blit(text_surface_marcador, (20, 10))\n    text_surface_turno = FONT_SCORE.render(turno_text, True, BLACK)\n    SCREEN.blit(text_surface_turno, (WIDTH - 180, 10))\ndef mostrar_pregunta(pregunta_dict, hovered_index, turno):\n    \"\"\"",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "mostrar_pregunta",
+        "kind": 2,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "def mostrar_pregunta(pregunta_dict, hovered_index, turno):\n    \"\"\"\n    Muestra la pregunta y sus opciones (enumeradas) en pantalla y retorna\n    la lista de rectángulos correspondientes a cada opción.\n    \"\"\"\n    # Dibujar imagen de fondo y aclararla\n    if background:\n        SCREEN.blit(background, (0, 0))\n        overlay = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)\n        overlay.fill((255, 255, 255, 90))  # Ajusta el valor para aclarar la imagen",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "mostrar_resultado_final",
+        "kind": 2,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "def mostrar_resultado_final(score1, score2, total_preguntas):\n    \"\"\"Muestra la pantalla final con los resultados.\"\"\"\n    if background:\n        SCREEN.blit(background, (0, 0))\n    else:\n        SCREEN.fill(WHITE)\n    draw_text(\"¡Fin de la Trivia!\", FONT_TITLE, PURPLE, SCREEN, WIDTH // 2, HEIGHT // 2 - 50)\n    resultado_text = f\"Equipo 1: {score1} puntos  |  Equipo 2: {score2} puntos\"\n    draw_text(resultado_text, FONT, BLACK, SCREEN, WIDTH // 2, HEIGHT // 2)\n    final_msg = \"Gracias por participar y conmemorar el Día Internacional de la Mujer.\"",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "def main():\n    global indice_pregunta, score_team1, score_team2, turno_equipo, game_over\n    clock = pygame.time.Clock()\n    hovered_index = -1\n    # Mapeo de teclas para las opciones: a->0, b->1, c->2, d->3\n    key_mapping = {\n        pygame.K_a: 0,\n        pygame.K_b: 1,\n        pygame.K_c: 2,\n        pygame.K_d: 3",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "procesar_respuesta",
+        "kind": 2,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "def procesar_respuesta(current_question, respuesta):\n    \"\"\"\n    Procesa la respuesta (ya sea por mouse o teclado), reproduce el sonido\n    correspondiente, actualiza la puntuación, cambia el turno y avanza la pregunta.\n    \"\"\"\n    global indice_pregunta, score_team1, score_team2, turno_equipo, hovered_index\n    if respuesta == current_question[\"respuesta_correcta\"]:\n        if turno_equipo == 1:\n            score_team1 += 1\n        else:",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Trivia - Día Internacional de la Mujer\")\n# -------------------------\n#  Colores\n# -------------------------\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nPURPLE = (128, 0, 128)\nGRAY = (200, 200, 200)\nHOVER_COLOR = (150, 150, 150)   # Color al pasar el mouse",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "WHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nPURPLE = (128, 0, 128)\nGRAY = (200, 200, 200)\nHOVER_COLOR = (150, 150, 150)   # Color al pasar el mouse\n# -------------------------\n#  Fuentes de texto\n# -------------------------\nFONT = pygame.font.SysFont(\"Arial\", 24)\nFONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "BLACK",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "BLACK = (0, 0, 0)\nPURPLE = (128, 0, 128)\nGRAY = (200, 200, 200)\nHOVER_COLOR = (150, 150, 150)   # Color al pasar el mouse\n# -------------------------\n#  Fuentes de texto\n# -------------------------\nFONT = pygame.font.SysFont(\"Arial\", 24)\nFONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)\nFONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "PURPLE",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "PURPLE = (128, 0, 128)\nGRAY = (200, 200, 200)\nHOVER_COLOR = (150, 150, 150)   # Color al pasar el mouse\n# -------------------------\n#  Fuentes de texto\n# -------------------------\nFONT = pygame.font.SysFont(\"Arial\", 24)\nFONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)\nFONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)\n# -------------------------",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "GRAY",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "GRAY = (200, 200, 200)\nHOVER_COLOR = (150, 150, 150)   # Color al pasar el mouse\n# -------------------------\n#  Fuentes de texto\n# -------------------------\nFONT = pygame.font.SysFont(\"Arial\", 24)\nFONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)\nFONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)\n# -------------------------\n#  Cargar sonidos",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "HOVER_COLOR",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "HOVER_COLOR = (150, 150, 150)   # Color al pasar el mouse\n# -------------------------\n#  Fuentes de texto\n# -------------------------\nFONT = pygame.font.SysFont(\"Arial\", 24)\nFONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)\nFONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)\n# -------------------------\n#  Cargar sonidos\n# -------------------------",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "FONT",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "FONT = pygame.font.SysFont(\"Arial\", 24)\nFONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)\nFONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)\n# -------------------------\n#  Cargar sonidos\n# -------------------------\ntry:\n    correct_sound = pygame.mixer.Sound(\"assets/correct.mp3\")\n    incorrect_sound = pygame.mixer.Sound(\"assets/incorrect.mp3\")\nexcept pygame.error:",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_TITLE",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "FONT_TITLE = pygame.font.SysFont(\"Arial\", 36, bold=True)\nFONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)\n# -------------------------\n#  Cargar sonidos\n# -------------------------\ntry:\n    correct_sound = pygame.mixer.Sound(\"assets/correct.mp3\")\n    incorrect_sound = pygame.mixer.Sound(\"assets/incorrect.mp3\")\nexcept pygame.error:\n    correct_sound = None",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SCORE",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "FONT_SCORE = pygame.font.SysFont(\"Arial\", 20, bold=True)\n# -------------------------\n#  Cargar sonidos\n# -------------------------\ntry:\n    correct_sound = pygame.mixer.Sound(\"assets/correct.mp3\")\n    incorrect_sound = pygame.mixer.Sound(\"assets/incorrect.mp3\")\nexcept pygame.error:\n    correct_sound = None\n    incorrect_sound = None",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "indice_pregunta",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "indice_pregunta = 0  # Índice de la pregunta actual\nscore_team1 = 0\nscore_team2 = 0\nturno_equipo = 1  # Comienza el Equipo 1\ngame_over = False\ndef draw_text(text, font, color, surface, x, y):\n    \"\"\"Dibuja texto centrado en (x, y).\"\"\"\n    render_text = font.render(text, True, color)\n    rect = render_text.get_rect()\n    rect.center = (x, y)",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "score_team1",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "score_team1 = 0\nscore_team2 = 0\nturno_equipo = 1  # Comienza el Equipo 1\ngame_over = False\ndef draw_text(text, font, color, surface, x, y):\n    \"\"\"Dibuja texto centrado en (x, y).\"\"\"\n    render_text = font.render(text, True, color)\n    rect = render_text.get_rect()\n    rect.center = (x, y)\n    surface.blit(render_text, rect)",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "score_team2",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "score_team2 = 0\nturno_equipo = 1  # Comienza el Equipo 1\ngame_over = False\ndef draw_text(text, font, color, surface, x, y):\n    \"\"\"Dibuja texto centrado en (x, y).\"\"\"\n    render_text = font.render(text, True, color)\n    rect = render_text.get_rect()\n    rect.center = (x, y)\n    surface.blit(render_text, rect)\ndef mostrar_marcador(score1, score2, turno):",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "turno_equipo",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "turno_equipo = 1  # Comienza el Equipo 1\ngame_over = False\ndef draw_text(text, font, color, surface, x, y):\n    \"\"\"Dibuja texto centrado en (x, y).\"\"\"\n    render_text = font.render(text, True, color)\n    rect = render_text.get_rect()\n    rect.center = (x, y)\n    surface.blit(render_text, rect)\ndef mostrar_marcador(score1, score2, turno):\n    \"\"\"Dibuja el marcador de puntajes y el turno actual.\"\"\"",
+        "detail": "mujer",
+        "documentation": {}
+    },
+    {
+        "label": "game_over",
+        "kind": 5,
+        "importPath": "mujer",
+        "description": "mujer",
+        "peekOfCode": "game_over = False\ndef draw_text(text, font, color, surface, x, y):\n    \"\"\"Dibuja texto centrado en (x, y).\"\"\"\n    render_text = font.render(text, True, color)\n    rect = render_text.get_rect()\n    rect.center = (x, y)\n    surface.blit(render_text, rect)\ndef mostrar_marcador(score1, score2, turno):\n    \"\"\"Dibuja el marcador de puntajes y el turno actual.\"\"\"\n    marcador_text = f\"Equipo 1: {score1}  |  Equipo 2: {score2}\"",
+        "detail": "mujer",
         "documentation": {}
     },
     {
@@ -405,6 +625,15 @@
         "documentation": {}
     },
     {
+        "label": "preguntas",
+        "kind": 5,
+        "importPath": "preguntas",
+        "description": "preguntas",
+        "peekOfCode": "preguntas = [\n    {\n        \"pregunta\": \"1) ¿En qué año la ONU oficializó el Día Internacional de la Mujer?\",\n        \"opciones\": [\"1945\", \"1975\", \"1980\", \"2000\"],\n        \"respuesta_correcta\": 1,\n        \"explicacion\": \"La ONU oficializó el Día Internacional de la Mujer en 1975.\"\n    },\n    {\n        \"pregunta\": \"2) ¿Cuál es la capital del departamento de Risaralda?\",\n        \"opciones\": [\"Manizales\", \"Armenia\", \"Pereira\", \"Dosquebradas\"],",
+        "detail": "preguntas",
+        "documentation": {}
+    },
+    {
         "label": "pantalla",
         "kind": 5,
         "importPath": "pturtle",
@@ -456,6 +685,231 @@
         "description": "pturtle",
         "peekOfCode": "vertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)\n    tortuga.right(angulo)\n# CAMBIAMOS DE COLOR PARA LAS LÍNEAS AL CENTRO\ntortuga.color(\"red\")",
         "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "document",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "document = Document()\n# Configurar tamaño de página y márgenes para tamaño carta (8.5 x 11 pulgadas)\nsection = document.sections[0]\nsection.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section = document.sections[0]\nsection.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section.page_width",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section.page_width = Inches(8.5)\nsection.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section.page_height",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section.page_height = Inches(11)\nsection.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section.top_margin",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section.top_margin = Inches(0.5)\nsection.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section.bottom_margin",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section.bottom_margin = Inches(0.5)\nsection.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section.left_margin",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section.left_margin = Inches(0.5)\nsection.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "section.right_margin",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "section.right_margin = Inches(0.5)\n# Agregar el encabezado centrado\nheader_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "header_paragraph",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "header_paragraph = document.add_paragraph()\nheader_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "header_paragraph.alignment",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "header_paragraph.alignment = 1  # 0=izquierda, 1=centrado, 2=derecha\nheader_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "header_run",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "header_run = header_paragraph.add_run(\n    \"Los estudiantes de grado 1102 del Instituto Guática hacen una rifa con el fin de recaudar fondos para las actividades de finalización de estudios\"\n)\nheader_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "header_run.bold",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "header_run.bold = True\nheader_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "header_run.font.size",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "header_run.font.size = Pt(14)\n# Agregar información del premio centrada\nprize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "prize_paragraph",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "prize_paragraph = document.add_paragraph()\nprize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------\n# Calcular la altura de cada fila para que la tabla ocupe el espacio restante.\n# Se asume:",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "prize_paragraph.alignment",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "prize_paragraph.alignment = 1\nprize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------\n# Calcular la altura de cada fila para que la tabla ocupe el espacio restante.\n# Se asume:\n# - Página: 11\" de alto",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "prize_run",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "prize_run = prize_paragraph.add_run(\"Premio: Combo de Pollo frito Frisby\")\nprize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------\n# Calcular la altura de cada fila para que la tabla ocupe el espacio restante.\n# Se asume:\n# - Página: 11\" de alto\n# - Márgenes superior e inferior: 0.5\" cada uno  --> espacio vertical total: 11 - 1 = 10\"",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "prize_run.bold",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "prize_run.bold = True\nprize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------\n# Calcular la altura de cada fila para que la tabla ocupe el espacio restante.\n# Se asume:\n# - Página: 11\" de alto\n# - Márgenes superior e inferior: 0.5\" cada uno  --> espacio vertical total: 11 - 1 = 10\"\n# - Espacio usado por los párrafos de encabezado y premio (aproximado): 1.5\"",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "prize_run.font.size",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "prize_run.font.size = Pt(12)\n# Agregar un párrafo en blanco para separar\ndocument.add_paragraph()\n# ---------------------------------------------------------------------------\n# Calcular la altura de cada fila para que la tabla ocupe el espacio restante.\n# Se asume:\n# - Página: 11\" de alto\n# - Márgenes superior e inferior: 0.5\" cada uno  --> espacio vertical total: 11 - 1 = 10\"\n# - Espacio usado por los párrafos de encabezado y premio (aproximado): 1.5\"\n# Entonces, espacio disponible para la tabla: 10 - 1.5 = 8.5\" ",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "row_height",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "row_height = Inches(8.5 / 21)\n# Crear la tabla: 21 filas y 3 columnas\ntable = document.add_table(rows=21, cols=3)\ntable.style = 'Table Grid'\n# Rellenar la primera fila (encabezados de la tabla)\nhdr_cells = table.rows[0].cells\nhdr_cells[0].text = 'N°'\nhdr_cells[1].text = 'Nombre'\nhdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "table",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "table = document.add_table(rows=21, cols=3)\ntable.style = 'Table Grid'\n# Rellenar la primera fila (encabezados de la tabla)\nhdr_cells = table.rows[0].cells\nhdr_cells[0].text = 'N°'\nhdr_cells[1].text = 'Nombre'\nhdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "table.style",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "table.style = 'Table Grid'\n# Rellenar la primera fila (encabezados de la tabla)\nhdr_cells = table.rows[0].cells\nhdr_cells[0].text = 'N°'\nhdr_cells[1].text = 'Nombre'\nhdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height\n    row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "hdr_cells = table.rows[0].cells\nhdr_cells[0].text = 'N°'\nhdr_cells[1].text = 'Nombre'\nhdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height\n    row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY\n# Rellenar la primera columna de las filas de participantes (filas 2 a 21)\nfor i in range(1, 21):",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "hdr_cells[0].text = 'N°'\nhdr_cells[1].text = 'Nombre'\nhdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height\n    row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY\n# Rellenar la primera columna de las filas de participantes (filas 2 a 21)\nfor i in range(1, 21):\n    row_cells = table.rows[i].cells",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "hdr_cells[1].text = 'Nombre'\nhdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height\n    row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY\n# Rellenar la primera columna de las filas de participantes (filas 2 a 21)\nfor i in range(1, 21):\n    row_cells = table.rows[i].cells\n    row_cells[0].text = str(i)",
+        "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "rifa",
+        "description": "rifa",
+        "peekOfCode": "hdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height\n    row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY\n# Rellenar la primera columna de las filas de participantes (filas 2 a 21)\nfor i in range(1, 21):\n    row_cells = table.rows[i].cells\n    row_cells[0].text = str(i)\n    # Las celdas \"Nombre\" y \"Teléfono\" se dejan en blanco para completarlas manualmente",
+        "detail": "rifa",
         "documentation": {}
     },
     {
