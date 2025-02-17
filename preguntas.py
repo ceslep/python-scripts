@@ -1,197 +1,192 @@
 preguntas = [
     {
-        "pregunta": "1) ¿En qué año la ONU oficializó el Día Internacional de la Mujer?",
-        "opciones": ["1945", "1975", "1980", "2000"],
-        "respuesta_correcta": 1,
-        "explicacion": "La ONU oficializó el Día Internacional de la Mujer en 1975."
-    },
-    {
-        "pregunta": "2) ¿Cuál es la capital del departamento de Risaralda?",
-        "opciones": ["Manizales", "Armenia", "Pereira", "Dosquebradas"],
-        "respuesta_correcta": 2,
-        "explicacion": "La capital de Risaralda es Pereira."
-    },
-    {
-        "pregunta": "3) ¿En qué año se reconoció en Colombia el derecho al voto femenino?",
+        "pregunta": "1) ¿En qué año se reconoció en Colombia el derecho al voto femenino?",
         "opciones": ["1930", "1954", "1961", "1975"],
         "respuesta_correcta": 1,
         "explicacion": "Las mujeres lograron el derecho al voto en 1954 y lo ejercieron por primera vez en 1957."
     },
     {
-        "pregunta": "4) ¿Quién fue la primera mujer en ocupar la Vicepresidencia de Colombia?",
-        "opciones": ["Claudia López", "Marta Lucía Ramírez", "María Emma Mejía", "Piedad Córdoba"],
+        "pregunta": "2) ¿Qué ley colombiana protege específicamente a las mujeres contra la violencia?",
+        "opciones": ["Ley 100 de 1993", "Ley 1257 de 2008", "Ley 30 de 1986", "Ley 1801 de 2016"],
         "respuesta_correcta": 1,
-        "explicacion": "Marta Lucía Ramírez ocupó la Vicepresidencia de 2018 a 2022."
+        "explicacion": "La Ley 1257 de 2008 establece medidas de protección contra la violencia hacia la mujer."
     },
     {
-        "pregunta": "5) El 8 de marzo conmemora principalmente:",
-        "opciones": [
-            "Una festividad religiosa",
-            "La lucha de las mujeres trabajadoras por sus derechos e igualdad",
-            "El día de la familia",
-            "El aniversario de la Independencia de Colombia"
-        ],
+        "pregunta": "3) ¿Qué porcentaje aproximado de escaños en el Congreso colombiano ocuparon mujeres en 2022?",
+        "opciones": ["18%", "28%", "35%", "42%"],
         "respuesta_correcta": 1,
-        "explicacion": "El 8 de marzo se originó por la lucha de las mujeres trabajadoras."
+        "explicacion": "En 2022 las mujeres ocuparon el 28% de las curules, mostrando avances pero aún con disparidad."
     },
     {
-        "pregunta": "6) ¿Cuál de las siguientes mujeres fue una líder histórica de la independencia colombiana?",
-        "opciones": ["Policarpa Salavarrieta", "Débora Arango", "Fanny Mikey", "Totó la Momposina"],
+        "pregunta": "4) ¿Quién fue la primera mujer afrocolombiana en llegar a la Vicepresidencia?",
+        "opciones": ["Piedad Córdoba", "Clara López", "Francia Márquez", "Marta Lucía Ramírez"],
+        "respuesta_correcta": 2,
+        "explicacion": "Francia Márquez hizo historia en 2022 como primera vicepresidenta afrodescendiente."
+    },
+    {
+        "pregunta": "5) La brecha salarial de género en Colombia es aproximadamente de:",
+        "opciones": ["5%", "12%", "20%", "30%"],
+        "respuesta_correcta": 2,
+        "explicacion": "Las mujeres ganan en promedio 20% menos que los hombres por el mismo trabajo."
+    },
+    {
+        "pregunta": "6) ¿Qué caso emblemático llevó a la tipificación del feminicidio en Colombia?",
+        "opciones": ["Caso de Rosa Elvira Cely", "Caso de Yuliana Samboní", "Caso de Luis Andrade", "Caso de Carolina Pardo"],
         "respuesta_correcta": 0,
-        "explicacion": "Policarpa Salavarrieta (La Pola) es una heroína de la Independencia de Colombia."
+        "explicacion": "El brutal feminicidio de Rosa Elvira Cely (2012) impulsó la Ley 1761 de 2015."
     },
     {
-        "pregunta": "7) ¿En qué departamento se encuentra el municipio de La Virginia?",
-        "opciones": ["Caldas", "Quindío", "Risaralda", "Antioquia"],
+        "pregunta": "7) ¿Qué porcentaje de mujeres víctimas del conflicto armado reporta la Comisión de la Verdad?",
+        "opciones": ["25%", "35%", "50%", "65%"],
         "respuesta_correcta": 2,
-        "explicacion": "La Virginia pertenece al departamento de Risaralda."
+        "explicacion": "El 50% de las víctimas del conflicto armado fueron mujeres según el informe final."
     },
     {
-        "pregunta": "8) Aproximadamente, ¿qué porcentaje de la población de Risaralda son mujeres?",
-        "opciones": ["40%", "48%", "52%", "60%"],
-        "respuesta_correcta": 2,
-        "explicacion": "Las mujeres representan alrededor del 52% de la población en Risaralda."
-    },
-    {
-        "pregunta": "9) ¿En qué mes se celebra el Día Internacional de la Mujer?",
-        "opciones": ["Enero", "Febrero", "Marzo", "Abril"],
-        "respuesta_correcta": 2,
-        "explicacion": "El Día Internacional de la Mujer se celebra el 8 de marzo."
-    },
-    {
-        "pregunta": "10) ¿Cuál es el objetivo principal del 8 de marzo?",
-        "opciones": [
-            "Conmemorar la independencia de Colombia",
-            "Reivindicar los derechos de las mujeres y promover la igualdad",
-            "Impulsar la economía naranja",
-            "Exaltar la belleza femenina"
-        ],
-        "respuesta_correcta": 1,
-        "explicacion": "El 8M busca visibilizar y promover la igualdad de derechos de las mujeres."
-    },
-    {
-        "pregunta": "11) ¿Quién fue la primera mujer en ser Alcaldesa (encargada) de Bogotá?",
-        "opciones": ["Clara López", "María Eugenia Rojas", "Fanny González", "Angélica Lozano"],
-        "respuesta_correcta": 0,
-        "explicacion": "Clara López fue designada Alcaldesa Mayor encargada de Bogotá en 2011."
-    },
-    {
-        "pregunta": "12) ¿Cuál de estas mujeres colombianas es reconocida por su activismo a favor de comunidades afro y el medio ambiente?",
-        "opciones": ["Ingrid Betancourt", "Piedad Córdoba", "Francia Márquez", "Ángela Merkel"],
-        "respuesta_correcta": 2,
-        "explicacion": "Francia Márquez es una destacada líder social y ambiental en Colombia."
-    },
-    {
-        "pregunta": "13) ¿Qué municipio de Risaralda es reconocido por su arquitectura colonial y festividades culturales?",
-        "opciones": ["Marsella", "Apía", "Santa Rosa de Cabal", "La Celia"],
-        "respuesta_correcta": 0,
-        "explicacion": "Marsella es famoso por su arquitectura tradicional y espacios culturales."
-    },
-    {
-        "pregunta": "14) ¿Cuál de estas leyes en Colombia promueve la participación política de las mujeres?",
-        "opciones": ["Ley 100", "Ley de Cuotas (Ley 581 de 2000)", "Ley 30", "Ley 136"],
-        "respuesta_correcta": 1,
-        "explicacion": "La Ley 581 de 2000, llamada Ley de Cuotas, promueve la participación de la mujer en cargos públicos."
-    },
-    {
-        "pregunta": "15) ¿Quién fue la primera mujer en presidir el Senado de la República de Colombia?",
-        "opciones": ["Piedad Córdoba", "Claudia Blum", "Dilian Francisca Toro", "María Cano"],
-        "respuesta_correcta": 1,
-        "explicacion": "Claudia Blum fue la primera mujer Presidenta del Senado (2005-2006)."
-    },
-    {
-        "pregunta": "16) ¿Cuál de las siguientes mujeres colombianas ha ganado un Premio Nobel?",
-        "opciones": [
-            "Gabriel García Márquez",
-            "Shakira",
-            "Débora Arango",
-            "Ninguna mujer colombiana ha ganado el Nobel"
-        ],
+        "pregunta": "8) ¿Qué iniciativa promueve participación política de mujeres en zonas rurales?",
+        "opciones": ["Mujeres de Oro", "Mujer Rural Visible", "Campo con Rostro de Mujer", "Todas las anteriores"],
         "respuesta_correcta": 3,
-        "explicacion": "Hasta la fecha, ninguna mujer colombiana ha ganado un Premio Nobel."
+        "explicacion": "Existen múltiples programas para visibilizar y empoderar a las mujeres rurales."
     },
     {
-        "pregunta": "17) ¿Cuál de estas instituciones promueve la equidad de género y los derechos de la mujer en Colombia?",
-        "opciones": [
-            "Ministerio de Salud",
-            "SENA",
-            "Consejería Presidencial para la Equidad de la Mujer",
-            "Banco de la República"
-        ],
-        "respuesta_correcta": 2,
-        "explicacion": "La Consejería Presidencial para la Equidad de la Mujer lidera políticas públicas en este tema."
+        "pregunta": "9) ¿En qué año Colombia tuvo por primera vez una ministra de Defensa?",
+        "opciones": ["1995", "2006", "2015", "2020"],
+        "respuesta_correcta": 1,
+        "explicacion": "Marta Lucía Ramírez fue la primera ministra de Defensa en 2006."
     },
     {
-        "pregunta": "18) ¿Cuál de las siguientes mujeres fue precursora de la educación femenina y el periodismo en Colombia?",
-        "opciones": [
-            "María Cano",
-            "Rufina Alfaro",
-            "Mercedes Abadía",
-            "Soledad Acosta de Samper"
-        ],
+        "pregunta": "10) ¿Qué porcentaje de mujeres lideran hogares en Colombia según el DANE?",
+        "opciones": ["18%", "28%", "35%", "40%"],
         "respuesta_correcta": 3,
-        "explicacion": "Soledad Acosta de Samper fue escritora y periodista, impulsora de la educación femenina."
+        "explicacion": "4 de cada 10 hogares colombianos tienen jefatura femenina."
     },
     {
-        "pregunta": "19) ¿En qué ciudad de Risaralda se encuentra la sede principal de la Universidad Tecnológica de Pereira?",
-        "opciones": ["Pereira", "Santa Rosa de Cabal", "La Virginia", "Belén de Umbría"],
+        "pregunta": "11) ¿Qué colectivo representa a mujeres indígenas en Colombia?",
+        "opciones": ["ONIC Mujer", "CONAMIC", "Organización Femenina Popular", "Red de Mujeres Chocoanas"],
+        "respuesta_correcta": 1,
+        "explicacion": "CONAMIC coordina a mujeres indígenas de diferentes pueblos originarios."
+    },
+    {
+        "pregunta": "12) ¿Qué departamento tiene mayor porcentaje de jefaturas femeninas?",
+        "opciones": ["Chocó", "Bogotá", "Amazonas", "Vaupés"],
         "respuesta_correcta": 0,
-        "explicacion": "La UTP tiene su sede principal en la ciudad de Pereira."
+        "explicacion": "Chocó registra más del 45% de hogares con jefatura femenina."
     },
     {
-        "pregunta": "20) ¿Cuál es la principal razón para conmemorar el 8 de marzo en el contexto colombiano?",
+        "pregunta": "13) ¿Qué premio internacional recibió la líder indígena colombiana Ati Quigua?",
+        "opciones": ["Nobel de Paz", "Premio Goldman", "Premio UNESCO", "Ninguno de los anteriores"],
+        "respuesta_correcta": 1,
+        "explicacion": "Recibió el Goldman Environmental Prize en 2020 por su defensa ambiental."
+    },
+    {
+        "pregunta": "14) ¿Qué porcentaje de mujeres ocupan rectorías universitarias en Colombia?",
+        "opciones": ["12%", "22%", "32%", "42%"],
+        "respuesta_correcta": 0,
+        "explicacion": "Solo el 12% de las universidades colombianas tienen rectoras (2023)."
+    },
+    {
+        "pregunta": "15) ¿En qué año se creó la Consejería Presidencial para la Equidad de la Mujer?",
+        "opciones": ["1995", "2003", "2010", "2018"],
+        "respuesta_correcta": 2,
+        "explicacion": "Creada en 2010 para coordinar políticas públicas de equidad de género."
+    },
+    {
+        "pregunta": "16) ¿Quién fue la primera mujer en ocupar un ministerio en Colombia?",
+        "opciones": ["Esmeralda Arboleda", "María Currea", "Carmenza Duque", "Cecilia López"],
+        "respuesta_correcta": 0,
+        "explicacion": "Esmeralda Arboleda fue la primera ministra (Comunicaciones) en 1958."
+    },
+    {
+        "pregunta": "17) ¿En qué año las mujeres pudieron ingresar por primera vez a la universidad en Colombia?",
+        "opciones": ["1930", "1945", "1957", "1962"],
+        "respuesta_correcta": 1,
+        "explicacion": "En 1945 se permitió oficialmente el ingreso de mujeres a la educación superior."
+    },
+    {
+        "pregunta": "18) ¿Qué porcentaje de mujeres colombianas trabajan en áreas STEM?",
+        "opciones": ["15%", "28%", "37%", "45%"],
+        "respuesta_correcta": 2,
+        "explicacion": "Según el MinCiencias, el 37% de investigadores en STEM son mujeres (2023)."
+    },
+    {
+        "pregunta": "19) ¿Qué establece la Ley Rosa Elvira Cely?",
+        "opciones": ["Derecho al aborto", "Tipificación del feminicidio", "Paridad salarial", "Educación gratuita"],
+        "respuesta_correcta": 1,
+        "explicacion": "Ley 1761 de 2015 creó el tipo penal de feminicidio como delito autónomo."
+    },
+    {
+        "pregunta": "20) ¿Cada cuánto tiempo es asesinada una mujer en Colombia?",
+        "opciones": ["Cada 3 días", "Cada 12 horas", "Cada 26 horas", "Cada 5 días"],
+        "respuesta_correcta": 2,
+        "explicacion": "Según Medicina Legal, en 2022 hubo 335 feminicidios (promedio 26 horas/víctima)."
+    },
+    {
+        "pregunta": "21) ¿Qué porcentaje de mujeres participaron en la implementación del Acuerdo de Paz?",
+        "opciones": ["18%", "30%", "50%", "65%"],
+        "respuesta_correcta": 0,
+        "explicacion": "Solo el 18% de los espacios de implementación fueron ocupados por mujeres (2023)."
+    },
+    {
+        "pregunta": "22) ¿Qué establece la Ley 1475 de 2011 sobre participación política?",
         "opciones": [
-            "Difundir música folclórica",
-            "Visibilizar la lucha de las mujeres trabajadoras y sus derechos",
-            "Recordar la Constitución de 1991",
-            "Celebrar el Día de la Familia"
+            "Paridad 50-50 en listas",
+            "30% de mujeres en listas",
+            "Cuotas para víctimas",
+            "Ninguna de las anteriores"
         ],
         "respuesta_correcta": 1,
-        "explicacion": "El 8M destaca la lucha y derechos de las mujeres trabajadoras en Colombia."
+        "explicacion": "Establece que el 30% de candidatos deben ser mujeres en elecciones con lista única."
     },
     {
-        "pregunta": "21) ¿Qué suceso relevante ocurrió en 1957 para las mujeres colombianas?",
-        "opciones": [
-            "Participar por primera vez en unas justas deportivas",
-            "Aprobaron la Ley de Equidad Salarial",
-            "Votaron por primera vez en un plebiscito",
-            "Fundaron la primera universidad femenina"
-        ],
+        "pregunta": "23) ¿Quién fue la primera mujer policía en Colombia?",
+        "opciones": ["Carmen Salcedo", "Rosa Suárez", "Claudia Rodríguez", "María Pineda"],
+        "respuesta_correcta": 0,
+        "explicacion": "Carmen Salcedo ingresó en 1976 al cuerpo de auxiliares bachilleres de la Policía."
+    },
+    {
+        "pregunta": "24) ¿Cuál es la tasa de mortalidad materna por cada 100,000 nacidos vivos?",
+        "opciones": ["48", "72", "95", "120"],
         "respuesta_correcta": 2,
-        "explicacion": "En 1957, las mujeres ejercieron por primera vez el derecho al voto en un plebiscito."
+        "explicacion": "Según OMS (2023), Colombia tiene tasa de 95 muertes maternas por 100,000 NV."
     },
     {
-        "pregunta": "22) ¿Cuál de estas iniciativas promueve la equidad de género en el sector cafetero colombiano?",
-        "opciones": [
-            "Agroempresarias",
-            "Mujeres Cafeteras",
-            "Moda para el Café",
-            "Todos Somos Café"
-        ],
+        "pregunta": "25) ¿Qué porcentaje de alcaldías fueron ocupadas por mujeres en 2023?",
+        "opciones": ["12%", "18%", "22%", "30%"],
         "respuesta_correcta": 1,
-        "explicacion": "El programa 'Mujeres Cafeteras' impulsa la participación femenina en el sector."
+        "explicacion": "Solo 209 de 1,103 municipios tienen alcaldesas (18.9%)."
     },
     {
-        "pregunta": "23) ¿Quién fue Gloria Valencia de Castaño en la historia de la televisión colombiana?",
+        "pregunta": "26) ¿Qué porcentaje de mujeres rurales acceden a educación superior?",
+        "opciones": ["5%", "12%", "20%", "25%"],
+        "respuesta_correcta": 0,
+        "explicacion": "Solo 5% de mujeres rurales acceden a educación superior vs 22% urbanas (DANE 2023)."
+    },
+    {
+        "pregunta": "27) ¿Quién fue la primera mujer campeona mundial de boxeo en Colombia?",
+        "opciones": ["Yésica Bopp", "Ingrid Valencia", "María Santa Cruz", "Beatriz Ferrer"],
+        "respuesta_correcta": 1,
+        "explicacion": "Ingrid Valencia ganó el título mundial de boxeo en 2016 (peso mosca)."
+    },
+    {
+        "pregunta": "28) ¿Qué impacto tuvo la pandemia en empleo femenino según el DANE?",
         "opciones": [
-            "La primera mujer en conducir un noticiero",
-            "La primera presentadora de telenovelas mexicanas",
-            "Una cantante de música llanera",
-            "Una deportista olímpica"
+            "Aumentó 5%",
+            "Se mantuvo igual",
+            "Perdieron 1.8 millones de empleos",
+            "Mejoró la formalización"
         ],
-        "respuesta_correcta": 0,
-        "explicacion": "Gloria Valencia de Castaño fue pionera en la conducción de noticieros en Colombia."
-    },
-    {
-        "pregunta": "24) ¿En qué municipio de Risaralda se encuentran las famosas Termales de Santa Rosa?",
-        "opciones": ["Santa Rosa de Cabal", "Apía", "Pueblo Rico", "Quinchía"],
-        "respuesta_correcta": 0,
-        "explicacion": "Santa Rosa de Cabal es conocida por sus termales y por iniciativas turísticas lideradas por mujeres."
-    },
-    {
-        "pregunta": "25) ¿Cuál es la fecha exacta del Día Internacional de la Mujer?",
-        "opciones": ["8 de enero", "8 de febrero", "8 de marzo", "8 de abril"],
         "respuesta_correcta": 2,
-        "explicacion": "Se conmemora cada 8 de marzo."
+        "explicacion": "Entre 2020-2021, 1.8 millones de mujeres perdieron su empleo por COVID-19."
     },
+    {
+        "pregunta": "29) ¿Qué artículo de la Constitución protege derechos de las mujeres?",
+        "opciones": ["Artículo 13", "Artículo 42", "Artículo 67", "Artículo 86"],
+        "respuesta_correcta": 0,
+        "explicacion": "El Artículo 13 establece igualdad y prohibición de discriminación por sexo."
+    },
+    {
+        "pregunta": "30) ¿Quién fue la primera mujer en dirigir una empresa estatal en Colombia?",
+        "opciones": ["Beatriz Arbeláez", "Clemencia Carabalí", "María Ángela Holguín", "Carmen Ortega"],
+        "respuesta_correcta": 0,
+        "explicacion": "Beatriz Arbeláez fue primera presidenta de Ecopetrol en 1970."
+    }
 ]

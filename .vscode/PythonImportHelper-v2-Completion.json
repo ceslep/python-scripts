@@ -1,5 +1,72 @@
 [
     {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "pygame",
         "kind": 6,
         "isExtraImport": true,
@@ -85,15 +152,6 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "ANCHO",
         "kind": 5,
         "importPath": "constantes",
@@ -127,6 +185,348 @@
         "description": "constantes",
         "peekOfCode": "JUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
+        "documentation": {}
+    },
+    {
+        "label": "SMTP_SERVER",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "SMTP_SERVER = \"smtp.gmail.com\"\nSMTP_PORT = 587\nSENDER_EMAIL = \"inasistenciasinstitutoguatica@gmail.com\"\nSENDER_PASSWORD = \"deim efwu aavv pblf\"  # ¡No uses tu contraseña real!\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "SMTP_PORT",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "SMTP_PORT = 587\nSENDER_EMAIL = \"inasistenciasinstitutoguatica@gmail.com\"\nSENDER_PASSWORD = \"deim efwu aavv pblf\"  # ¡No uses tu contraseña real!\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "SENDER_EMAIL",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "SENDER_EMAIL = \"inasistenciasinstitutoguatica@gmail.com\"\nSENDER_PASSWORD = \"deim efwu aavv pblf\"  # ¡No uses tu contraseña real!\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "SENDER_PASSWORD",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "SENDER_PASSWORD = \"deim efwu aavv pblf\"  # ¡No uses tu contraseña real!\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "EXCEL_FILE",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "EXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# -------------------------------\n# RECORRER CADA HOJA Y ENVIAR CORREO",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_COLUMN",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "EMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# -------------------------------\n# RECORRER CADA HOJA Y ENVIAR CORREO\n# -------------------------------",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "sheets_dict",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "sheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# -------------------------------\n# RECORRER CADA HOJA Y ENVIAR CORREO\n# -------------------------------\nfor sheet_name, df in sheets_dict.items():\n    print(f\"Procesando hoja: {sheet_name}\")",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "inas",
+        "description": "inas",
+        "peekOfCode": "server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# -------------------------------\n# RECORRER CADA HOJA Y ENVIAR CORREO\n# -------------------------------\nfor sheet_name, df in sheets_dict.items():\n    print(f\"Procesando hoja: {sheet_name}\")\n    # Verificar que la columna de email exista\n    if EMAIL_COLUMN not in df.columns:",
+        "detail": "inas",
+        "documentation": {}
+    },
+    {
+        "label": "SMTP_SERVER",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "SMTP_SERVER = os.getenv(\"SMTP_SERVER\", \"smtp.gmail.com\")\nSMTP_PORT = int(os.getenv(\"SMTP_PORT\", 587))\nSENDER_EMAIL = os.getenv(\"SENDER_EMAIL\")\nSENDER_PASSWORD = os.getenv(\"SENDER_PASSWORD\")\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Columnas requeridas para el reporte",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "SMTP_PORT",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "SMTP_PORT = int(os.getenv(\"SMTP_PORT\", 587))\nSENDER_EMAIL = os.getenv(\"SENDER_EMAIL\")\nSENDER_PASSWORD = os.getenv(\"SENDER_PASSWORD\")\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Columnas requeridas para el reporte\nREQUIRED_COLUMNS = [\"Estudiante\", \"Grupo\", \"Asignatura\", \"Horas de Inasistencia\"]",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "SENDER_EMAIL",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "SENDER_EMAIL = os.getenv(\"SENDER_EMAIL\")\nSENDER_PASSWORD = os.getenv(\"SENDER_PASSWORD\")\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Columnas requeridas para el reporte\nREQUIRED_COLUMNS = [\"Estudiante\", \"Grupo\", \"Asignatura\", \"Horas de Inasistencia\"]\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "SENDER_PASSWORD",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "SENDER_PASSWORD = os.getenv(\"SENDER_PASSWORD\")\n# -------------------------------\n# CONFIGURACIÓN DEL ARCHIVO EXCEL\n# -------------------------------\nEXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Columnas requeridas para el reporte\nREQUIRED_COLUMNS = [\"Estudiante\", \"Grupo\", \"Asignatura\", \"Horas de Inasistencia\"]\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "EXCEL_FILE",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "EXCEL_FILE = \"inasistencias.xlsx\"\nEMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Columnas requeridas para el reporte\nREQUIRED_COLUMNS = [\"Estudiante\", \"Grupo\", \"Asignatura\", \"Horas de Inasistencia\"]\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_COLUMN",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "EMAIL_COLUMN = \"Dirección de correo electrónico\"\n# Columnas requeridas para el reporte\nREQUIRED_COLUMNS = [\"Estudiante\", \"Grupo\", \"Asignatura\", \"Horas de Inasistencia\"]\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# Definir estilos CSS para la tabla (striped, encabezados centrados y columna \"Horas de Inasistencia\" centrada)",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "REQUIRED_COLUMNS",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "REQUIRED_COLUMNS = [\"Estudiante\", \"Grupo\", \"Asignatura\", \"Horas de Inasistencia\"]\n# Leemos todas las hojas del Excel en un diccionario: {nombre_hoja: DataFrame}\nsheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# Definir estilos CSS para la tabla (striped, encabezados centrados y columna \"Horas de Inasistencia\" centrada)\ncss_style = \"\"\"\n<style>",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "sheets_dict",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "sheets_dict = pd.read_excel(EXCEL_FILE, sheet_name=None)\n# Conectamos al servidor SMTP\nserver = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# Definir estilos CSS para la tabla (striped, encabezados centrados y columna \"Horas de Inasistencia\" centrada)\ncss_style = \"\"\"\n<style>\ntable {\n    width: 100%;",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)\nserver.starttls()\nserver.login(SENDER_EMAIL, SENDER_PASSWORD)\n# Definir estilos CSS para la tabla (striped, encabezados centrados y columna \"Horas de Inasistencia\" centrada)\ncss_style = \"\"\"\n<style>\ntable {\n    width: 100%;\n    border-collapse: collapse;\n    font-family: Arial, sans-serif;",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "css_style",
+        "kind": 5,
+        "importPath": "inas2",
+        "description": "inas2",
+        "peekOfCode": "css_style = \"\"\"\n<style>\ntable {\n    width: 100%;\n    border-collapse: collapse;\n    font-family: Arial, sans-serif;\n    margin-bottom: 20px;\n}\nth, td {\n    border: 1px solid #dee2e6;",
+        "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "generar_laberinto",
+        "kind": 2,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "def generar_laberinto(ancho, alto):\n    \"\"\"\n    Genera un laberinto aleatorio usando backtracking recursivo.\n    ancho y alto deben ser impares.\n    Devuelve una matriz (lista de listas) donde '#' representa pared y ' ' pasillo.\n    \"\"\"\n    # Inicializamos la matriz con paredes\n    lab = [['#' for _ in range(ancho)] for _ in range(alto)]\n    # Punto de inicio: (1, 1)\n    inicio = (1, 1)",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "laberinto_a_cadenas",
+        "kind": 2,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "def laberinto_a_cadenas(lab):\n    \"\"\"\n    Convierte la matriz del laberinto a una lista de cadenas (opcional).\n    \"\"\"\n    return [\"\".join(fila) for fila in lab]\n# ============================\n# CONFIGURACIÓN DEL JUEGO\n# ============================\n# Dimensiones del laberinto (usar números impares)\nCOLUMNAS = 21",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "COLUMNAS",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "COLUMNAS = 21\nFILAS = 21\nTAM_CELDA = 25  # Tamaño de cada celda en píxeles\n# Dimensiones de la ventana\nANCHO = COLUMNAS * TAM_CELDA\nALTO = FILAS * TAM_CELDA\n# Colores (RGB)\nCOLOR_FONDO = (0, 0, 0)\nCOLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "FILAS",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "FILAS = 21\nTAM_CELDA = 25  # Tamaño de cada celda en píxeles\n# Dimensiones de la ventana\nANCHO = COLUMNAS * TAM_CELDA\nALTO = FILAS * TAM_CELDA\n# Colores (RGB)\nCOLOR_FONDO = (0, 0, 0)\nCOLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "TAM_CELDA",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "TAM_CELDA = 25  # Tamaño de cada celda en píxeles\n# Dimensiones de la ventana\nANCHO = COLUMNAS * TAM_CELDA\nALTO = FILAS * TAM_CELDA\n# Colores (RGB)\nCOLOR_FONDO = (0, 0, 0)\nCOLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "ANCHO",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "ANCHO = COLUMNAS * TAM_CELDA\nALTO = FILAS * TAM_CELDA\n# Colores (RGB)\nCOLOR_FONDO = (0, 0, 0)\nCOLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame\npygame.init()\npantalla = pygame.display.set_mode((ANCHO, ALTO))",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "ALTO",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "ALTO = FILAS * TAM_CELDA\n# Colores (RGB)\nCOLOR_FONDO = (0, 0, 0)\nCOLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame\npygame.init()\npantalla = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Laberinto Aleatorio\")",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "COLOR_FONDO",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "COLOR_FONDO = (0, 0, 0)\nCOLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame\npygame.init()\npantalla = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Laberinto Aleatorio\")\n# Fuente para mensaje de victoria\nfuente = pygame.font.SysFont(\"Arial\", 40)",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "COLOR_PARED",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "COLOR_PARED = (100, 100, 100)\nCOLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame\npygame.init()\npantalla = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Laberinto Aleatorio\")\n# Fuente para mensaje de victoria\nfuente = pygame.font.SysFont(\"Arial\", 40)\n# ============================",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "COLOR_JUGADOR",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "COLOR_JUGADOR = (0, 0, 255)\nCOLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame\npygame.init()\npantalla = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Laberinto Aleatorio\")\n# Fuente para mensaje de victoria\nfuente = pygame.font.SysFont(\"Arial\", 40)\n# ============================\n# GENERAR EL LABERINTO",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "COLOR_SALIDA",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "COLOR_SALIDA = (0, 255, 0)\n# Inicializar Pygame\npygame.init()\npantalla = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Laberinto Aleatorio\")\n# Fuente para mensaje de victoria\nfuente = pygame.font.SysFont(\"Arial\", 40)\n# ============================\n# GENERAR EL LABERINTO\n# ============================",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "pantalla",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "pantalla = pygame.display.set_mode((ANCHO, ALTO))\npygame.display.set_caption(\"Laberinto Aleatorio\")\n# Fuente para mensaje de victoria\nfuente = pygame.font.SysFont(\"Arial\", 40)\n# ============================\n# GENERAR EL LABERINTO\n# ============================\nlaberinto = generar_laberinto(COLUMNAS, FILAS)\n# Colocar posición de inicio y salida:\n# - Inicio en (1,1)",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "fuente",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "fuente = pygame.font.SysFont(\"Arial\", 40)\n# ============================\n# GENERAR EL LABERINTO\n# ============================\nlaberinto = generar_laberinto(COLUMNAS, FILAS)\n# Colocar posición de inicio y salida:\n# - Inicio en (1,1)\n# - Salida en (COLUMNAS-2, FILAS-2)\nlaberinto[1][1] = 'P'   # Marcamos el inicio, aunque internamente lo usaremos para mover al jugador\nlaberinto[FILAS-2][COLUMNAS-2] = 'S'",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "laberinto",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "laberinto = generar_laberinto(COLUMNAS, FILAS)\n# Colocar posición de inicio y salida:\n# - Inicio en (1,1)\n# - Salida en (COLUMNAS-2, FILAS-2)\nlaberinto[1][1] = 'P'   # Marcamos el inicio, aunque internamente lo usaremos para mover al jugador\nlaberinto[FILAS-2][COLUMNAS-2] = 'S'\n# Encontrar posición inicial del jugador\npos_jugador = [1, 1]  # [columna, fila]\n# ============================\n# BUCLE PRINCIPAL DEL JUEGO",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "laberinto[1][1]",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "laberinto[1][1] = 'P'   # Marcamos el inicio, aunque internamente lo usaremos para mover al jugador\nlaberinto[FILAS-2][COLUMNAS-2] = 'S'\n# Encontrar posición inicial del jugador\npos_jugador = [1, 1]  # [columna, fila]\n# ============================\n# BUCLE PRINCIPAL DEL JUEGO\n# ============================\nreloj = pygame.time.Clock()\njugando = True\nganaste = False",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "laberinto[FILAS-2][COLUMNAS-2]",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "laberinto[FILAS-2][COLUMNAS-2] = 'S'\n# Encontrar posición inicial del jugador\npos_jugador = [1, 1]  # [columna, fila]\n# ============================\n# BUCLE PRINCIPAL DEL JUEGO\n# ============================\nreloj = pygame.time.Clock()\njugando = True\nganaste = False\nwhile jugando:",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "pos_jugador",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "pos_jugador = [1, 1]  # [columna, fila]\n# ============================\n# BUCLE PRINCIPAL DEL JUEGO\n# ============================\nreloj = pygame.time.Clock()\njugando = True\nganaste = False\nwhile jugando:\n    reloj.tick(10)  # 10 FPS\n    for evento in pygame.event.get():",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "reloj",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "reloj = pygame.time.Clock()\njugando = True\nganaste = False\nwhile jugando:\n    reloj.tick(10)  # 10 FPS\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            jugando = False\n        elif evento.type == pygame.KEYDOWN and not ganaste:\n            nueva_pos = pos_jugador.copy()",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "jugando",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "jugando = True\nganaste = False\nwhile jugando:\n    reloj.tick(10)  # 10 FPS\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            jugando = False\n        elif evento.type == pygame.KEYDOWN and not ganaste:\n            nueva_pos = pos_jugador.copy()\n            if evento.key == pygame.K_UP:",
+        "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "ganaste",
+        "kind": 5,
+        "importPath": "laberinto",
+        "description": "laberinto",
+        "peekOfCode": "ganaste = False\nwhile jugando:\n    reloj.tick(10)  # 10 FPS\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            jugando = False\n        elif evento.type == pygame.KEYDOWN and not ganaste:\n            nueva_pos = pos_jugador.copy()\n            if evento.key == pygame.K_UP:\n                nueva_pos[1] -= 1",
+        "detail": "laberinto",
         "documentation": {}
     },
     {
@@ -782,7 +1182,7 @@
         "kind": 5,
         "importPath": "preguntas",
         "description": "preguntas",
-        "peekOfCode": "preguntas = [\n    {\n        \"pregunta\": \"1) ¿En qué año la ONU oficializó el Día Internacional de la Mujer?\",\n        \"opciones\": [\"1945\", \"1975\", \"1980\", \"2000\"],\n        \"respuesta_correcta\": 1,\n        \"explicacion\": \"La ONU oficializó el Día Internacional de la Mujer en 1975.\"\n    },\n    {\n        \"pregunta\": \"2) ¿Cuál es la capital del departamento de Risaralda?\",\n        \"opciones\": [\"Manizales\", \"Armenia\", \"Pereira\", \"Dosquebradas\"],",
+        "peekOfCode": "preguntas = [\n    {\n        \"pregunta\": \"1) ¿En qué año se reconoció en Colombia el derecho al voto femenino?\",\n        \"opciones\": [\"1930\", \"1954\", \"1961\", \"1975\"],\n        \"respuesta_correcta\": 1,\n        \"explicacion\": \"Las mujeres lograron el derecho al voto en 1954 y lo ejercieron por primera vez en 1957.\"\n    },\n    {\n        \"pregunta\": \"2) ¿Qué ley colombiana protege específicamente a las mujeres contra la violencia?\",\n        \"opciones\": [\"Ley 100 de 1993\", \"Ley 1257 de 2008\", \"Ley 30 de 1986\", \"Ley 1801 de 2016\"],",
         "detail": "preguntas",
         "documentation": {}
     },
