@@ -120,6 +120,15 @@
         "documentation": {}
     },
     {
+        "label": "qrcode",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "qrcode",
+        "description": "qrcode",
+        "detail": "qrcode",
+        "documentation": {}
+    },
+    {
         "label": "Document",
         "importPath": "docx",
         "description": "docx",
@@ -1238,6 +1247,33 @@
         "description": "pturtle",
         "peekOfCode": "vertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)\n    tortuga.right(angulo)\n# CAMBIAMOS DE COLOR PARA LAS LÍNEAS AL CENTRO\ntortuga.color(\"red\")",
         "detail": "pturtle",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "qrcodep",
+        "description": "qrcodep",
+        "peekOfCode": "url = \"https://iedeoccidente.edu.co/documentos/manual_de_convivencia_ieo.pdf\"\n# Crear el objeto QRCode\nqr = qrcode.QRCode(\n    version=1,  # Controla el tamaño del QR (1 es el más pequeño)\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada \"caja\" del QR\n    border=4,     # Grosor del borde (en cajas)\n)\n# Agregar la URL al objeto QR\nqr.add_data(url)",
+        "detail": "qrcodep",
+        "documentation": {}
+    },
+    {
+        "label": "qr",
+        "kind": 5,
+        "importPath": "qrcodep",
+        "description": "qrcodep",
+        "peekOfCode": "qr = qrcode.QRCode(\n    version=1,  # Controla el tamaño del QR (1 es el más pequeño)\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada \"caja\" del QR\n    border=4,     # Grosor del borde (en cajas)\n)\n# Agregar la URL al objeto QR\nqr.add_data(url)\nqr.make(fit=True)\n# Crear la imagen del código QR",
+        "detail": "qrcodep",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "qrcodep",
+        "description": "qrcodep",
+        "peekOfCode": "img = qr.make_image(fill_color=\"black\", back_color=\"white\")\n# Guardar la imagen en un archivo\nimg.save(\"manual_convivencia_qr.png\")\nprint(\"El código QR se ha generado y guardado como 'manual_convivencia_qr.png'\")",
+        "detail": "qrcodep",
         "documentation": {}
     },
     {
