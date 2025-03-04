@@ -1,5 +1,21 @@
 [
     {
+        "label": "Document",
+        "importPath": "docx",
+        "description": "docx",
+        "isExtraImport": true,
+        "detail": "docx",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "docx",
+        "description": "docx",
+        "isExtraImport": true,
+        "detail": "docx",
+        "documentation": {}
+    },
+    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
@@ -129,14 +145,6 @@
         "documentation": {}
     },
     {
-        "label": "Document",
-        "importPath": "docx",
-        "description": "docx",
-        "isExtraImport": true,
-        "detail": "docx",
-        "documentation": {}
-    },
-    {
         "label": "Inches",
         "importPath": "docx.shared",
         "description": "docx.shared",
@@ -194,6 +202,1095 @@
         "description": "constantes",
         "peekOfCode": "JUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
+        "documentation": {}
+    },
+    {
+        "label": "document",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "document = Document()\n# Title and introduction\ndocument.add_heading('PLAN DE ÁREA DE TECNOLOGÍA E INFORMÁTICA GRADO: ONCE', 0)\ndocument.add_paragraph(\n    'Este documento presenta el plan de contenidos para la enseñanza de JavaScript '\n    'desde lo básico hasta lo avanzado, distribuido en cuatro períodos. Además, se incluyen aspectos de emprendimiento tecnológico, '\n    'enfocados en la construcción de páginas web con JavaScript, para promover la innovación y el desarrollo de proyectos emprendedores.'\n)\n# ---------------------------\n# PERÍODO 1: INTRODUCCIÓN A JAVASCRIPT Y FUNDAMENTOS BÁSICOS",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "table1",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "table1 = document.add_table(rows=2, cols=8)\nhdr_cells = table1.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells = table1.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table1.rows[1].cells\nrow_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = ('Introducción a JavaScript, sintaxis, variables, tipos de datos, operadores, '\n                       'estructuras de control, funciones básicas, manipulación del DOM.')\nrow_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Comprende la sintaxis básica de JavaScript y escribe scripts simples.'\nrow_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Crea programas simples utilizando estructuras de control.'\nrow_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)\ndocument.add_paragraph(",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[3].text = 'Cognitiva, Razonamiento lógico'\nrow_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)\ndocument.add_paragraph(\n    'Temática: Introducción a funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[4].text = 'Ejercicios prácticos, mini proyectos y resolución de problemas en aula.'\nrow_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)\ndocument.add_paragraph(\n    'Temática: Introducción a funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n    'manipulación del DOM y eventos. Se enfatiza la aplicación de estos conocimientos en el desarrollo de prototipos de páginas web con potencial emprendedor.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[5].text = 'Evaluación de código y ejercicios resueltos.'\nrow_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)\ndocument.add_paragraph(\n    'Temática: Introducción a funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n    'manipulación del DOM y eventos. Se enfatiza la aplicación de estos conocimientos en el desarrollo de prototipos de páginas web con potencial emprendedor.'\n)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[6].text = 'Computador, navegador web, editor de código, documentación online.'\nrow_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)\ndocument.add_paragraph(\n    'Temática: Introducción a funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n    'manipulación del DOM y eventos. Se enfatiza la aplicación de estos conocimientos en el desarrollo de prototipos de páginas web con potencial emprendedor.'\n)\ndocument.add_paragraph('Estándares:')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[7].text = 'El 80% de los estudiantes demuestran comprensión de los conceptos básicos.'\n# ---------------------------\n# PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM\ndocument.add_heading('PERÍODO 2: JAVASCRIPT INTERMEDIO: FUNCIONES AVANZADAS Y MANEJO DEL DOM', level=1)\ndocument.add_paragraph(\n    'Temática: Introducción a funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n    'manipulación del DOM y eventos. Se enfatiza la aplicación de estos conocimientos en el desarrollo de prototipos de páginas web con potencial emprendedor.'\n)\ndocument.add_paragraph('Estándares:')\ndocument.add_paragraph('● Diseña y utiliza funciones avanzadas y estructuras de datos en JavaScript.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "table2",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "table2 = document.add_table(rows=2, cols=8)\nhdr_cells = table2.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells = table2.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table2.rows[1].cells\nrow_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = ('Funciones avanzadas (arrow functions, callbacks), manejo de arreglos y objetos, '\n                       'manipulación del DOM y eventos.')\nrow_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Aplica conceptos intermedios de JavaScript en la manipulación del DOM y eventos.'\nrow_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Realiza proyectos que integren funciones avanzadas y manipulación del DOM.'\nrow_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)\ndocument.add_paragraph(",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[3].text = 'Cognitiva, Analítica'\nrow_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)\ndocument.add_paragraph(\n    'Temática: Programación asincrónica con Promises y async/await, consumo de APIs con fetch, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[4].text = 'Talleres prácticos, ejercicios de manipulación de elementos web y mini aplicaciones interactivas.'\nrow_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)\ndocument.add_paragraph(\n    'Temática: Programación asincrónica con Promises y async/await, consumo de APIs con fetch, '\n    'y fundamentos de la programación orientada a objetos en JavaScript. Se busca que los estudiantes desarrollen soluciones web robustas que puedan ser la base para proyectos emprendedores.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[5].text = 'Evaluación de aplicaciones web y revisión de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)\ndocument.add_paragraph(\n    'Temática: Programación asincrónica con Promises y async/await, consumo de APIs con fetch, '\n    'y fundamentos de la programación orientada a objetos en JavaScript. Se busca que los estudiantes desarrollen soluciones web robustas que puedan ser la base para proyectos emprendedores.'\n)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[6].text = 'Computador, navegador, editor de código, documentación (MDN).'\nrow_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)\ndocument.add_paragraph(\n    'Temática: Programación asincrónica con Promises y async/await, consumo de APIs con fetch, '\n    'y fundamentos de la programación orientada a objetos en JavaScript. Se busca que los estudiantes desarrollen soluciones web robustas que puedan ser la base para proyectos emprendedores.'\n)\ndocument.add_paragraph('Estándares:')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[7].text = 'El 75% de los estudiantes logran manipular el DOM de forma efectiva.'\n# ---------------------------\n# PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS\ndocument.add_heading('PERÍODO 3: JAVASCRIPT AVANZADO: ASINCRONÍA, APIs Y PROGRAMACIÓN ORIENTADA A OBJETOS', level=1)\ndocument.add_paragraph(\n    'Temática: Programación asincrónica con Promises y async/await, consumo de APIs con fetch, '\n    'y fundamentos de la programación orientada a objetos en JavaScript. Se busca que los estudiantes desarrollen soluciones web robustas que puedan ser la base para proyectos emprendedores.'\n)\ndocument.add_paragraph('Estándares:')\ndocument.add_paragraph('● Comprende y aplica técnicas de programación asincrónica en JavaScript.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "table3",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "table3 = document.add_table(rows=2, cols=8)\nhdr_cells = table3.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells = table3.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table3.rows[1].cells\nrow_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = ('Promises, async/await, consumo de APIs (fetch) y fundamentos de la programación orientada a objetos.')\nrow_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Desarrolla aplicaciones que integran consumo de APIs y POO.'\nrow_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Implementa código asincrónico y estructuras de POO en proyectos.'\nrow_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)\ndocument.add_paragraph(",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[3].text = 'Cognitiva, Resolución de problemas, Creativa'\nrow_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Temática: Desarrollo integral de una aplicación web interactiva utilizando JavaScript, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[4].text = 'Proyectos prácticos, desarrollo de módulos, integración de APIs y ejercicios colaborativos.'\nrow_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Temática: Desarrollo integral de una aplicación web interactiva utilizando JavaScript, '\n    'integrando los conocimientos adquiridos en los períodos anteriores. Este período enfatiza la realización de proyectos con un enfoque práctico que puede transformarse en iniciativas emprendedoras.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[5].text = 'Evaluación de proyectos, pruebas prácticas y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Temática: Desarrollo integral de una aplicación web interactiva utilizando JavaScript, '\n    'integrando los conocimientos adquiridos en los períodos anteriores. Este período enfatiza la realización de proyectos con un enfoque práctico que puede transformarse en iniciativas emprendedoras.'\n)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[6].text = 'Computador, navegador, editores de código, documentación (MDN, API docs).'\nrow_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Temática: Desarrollo integral de una aplicación web interactiva utilizando JavaScript, '\n    'integrando los conocimientos adquiridos en los períodos anteriores. Este período enfatiza la realización de proyectos con un enfoque práctico que puede transformarse en iniciativas emprendedoras.'\n)\ndocument.add_paragraph('Estándares:')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[7].text = 'El 70% de los estudiantes desarrollan aplicaciones que consumen APIs y aplican POO.'\n# ---------------------------\n# PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT\ndocument.add_heading('PERÍODO 4: DESARROLLO DE PROYECTOS WEB INTERACTIVOS CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Temática: Desarrollo integral de una aplicación web interactiva utilizando JavaScript, '\n    'integrando los conocimientos adquiridos en los períodos anteriores. Este período enfatiza la realización de proyectos con un enfoque práctico que puede transformarse en iniciativas emprendedoras.'\n)\ndocument.add_paragraph('Estándares:')\ndocument.add_paragraph('● Aplica de manera integral los conocimientos de JavaScript en el desarrollo de proyectos.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "table4",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "table4 = document.add_table(rows=2, cols=8)\nhdr_cells = table4.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells = table4.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table4.rows[1].cells\nrow_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = ('Diseño y desarrollo de una aplicación web interactiva, integración de APIs, manejo avanzado del DOM, '\n                       'depuración y optimización.')\nrow_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Desarrolla un proyecto final completo utilizando JavaScript.'\nrow_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = ('Presenta un proyecto funcional con interactividad, consumo de APIs y aplicación de buenas prácticas en el código.')\nrow_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)\ndocument.add_paragraph(",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[3].text = 'Cognitiva, Trabajo en equipo, Creativa, Comunicación'\nrow_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Esta sección aborda la integración de competencias emprendedoras en el ámbito del desarrollo web, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[4].text = ('Desarrollo de proyecto en equipo o individual, presentaciones, revisión de código y retroalimentación.')\nrow_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Esta sección aborda la integración de competencias emprendedoras en el ámbito del desarrollo web, '\n    'focalizándose en la construcción de páginas web con JavaScript como herramienta para innovar y generar proyectos con viabilidad de negocio. '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[5].text = 'Evaluación del proyecto final, presentaciones y análisis de código.'\nrow_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Esta sección aborda la integración de competencias emprendedoras en el ámbito del desarrollo web, '\n    'focalizándose en la construcción de páginas web con JavaScript como herramienta para innovar y generar proyectos con viabilidad de negocio. '\n    'Se incluyen temas relacionados con la identificación de oportunidades de mercado, diseño de modelos de negocio, estrategias de marketing digital, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[6].text = 'Computador, navegador, editor de código, herramientas de desarrollo, servidores web.'\nrow_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Esta sección aborda la integración de competencias emprendedoras en el ámbito del desarrollo web, '\n    'focalizándose en la construcción de páginas web con JavaScript como herramienta para innovar y generar proyectos con viabilidad de negocio. '\n    'Se incluyen temas relacionados con la identificación de oportunidades de mercado, diseño de modelos de negocio, estrategias de marketing digital, '\n    'creación de prototipos (MVP), y gestión de proyectos tecnológicos.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[7].text = 'El 70% de los estudiantes presentan proyectos web interactivos completos y funcionales.'\n# ---------------------------\n# NUEVA SECCIÓN: ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT\ndocument.add_heading('ASPECTOS DE EMPRENDIMIENTO TECNOLÓGICO EN EL DESARROLLO WEB CON JAVASCRIPT', level=1)\ndocument.add_paragraph(\n    'Esta sección aborda la integración de competencias emprendedoras en el ámbito del desarrollo web, '\n    'focalizándose en la construcción de páginas web con JavaScript como herramienta para innovar y generar proyectos con viabilidad de negocio. '\n    'Se incluyen temas relacionados con la identificación de oportunidades de mercado, diseño de modelos de negocio, estrategias de marketing digital, '\n    'creación de prototipos (MVP), y gestión de proyectos tecnológicos.'\n)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "table5",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "table5 = document.add_table(rows=2, cols=8)\nhdr_cells = table5.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells = table5.rows[0].cells\nhdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[0].text = 'CONTENIDO TEMÁTICO'\nhdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[1].text = 'LOGRO'\nhdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[2].text = 'INDICADOR DE LOGRO'\nhdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[3].text = 'COMPETENCIA'\nhdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[4].text = 'ACTIVIDADES PEDAGÓGICAS'\nhdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[5].text = 'INDICADORES DE EVALUACIÓN'\nhdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[6].text = 'RECURSOS'\nhdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[7].text = 'METAS DE CALIDAD'\nrow_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table5.rows[1].cells\nrow_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = ('Análisis de oportunidades de negocio digital, diseño de modelos de negocio, estrategias de marketing digital, '\n                       'creación de prototipos (MVP) y gestión de proyectos tecnológicos aplicados a el desarrollo de páginas web.')\nrow_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Desarrolla una propuesta de emprendimiento tecnológico basada en una aplicación web interactiva.'\nrow_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Presenta un proyecto o prototipo que integre funcionalidades de JavaScript con un modelo de negocio innovador.'\nrow_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)\ntable_summary = document.add_table(rows=6, cols=3)",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[3].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[3].text = 'Emprendimiento, Creatividad, Gestión de proyectos'\nrow_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)\ntable_summary = document.add_table(rows=6, cols=3)\nhdr_cells = table_summary.rows[0].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[4].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[4].text = ('Talleres de ideación, análisis de casos de éxito, elaboración de plan de negocio, desarrollo de prototipos y presentaciones de proyectos.')\nrow_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)\ntable_summary = document.add_table(rows=6, cols=3)\nhdr_cells = table_summary.rows[0].cells\nhdr_cells[0].text = 'Período'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[5].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[5].text = 'Evaluación de propuestas de negocio, viabilidad del prototipo y claridad en la estrategia emprendedora.'\nrow_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)\ntable_summary = document.add_table(rows=6, cols=3)\nhdr_cells = table_summary.rows[0].cells\nhdr_cells[0].text = 'Período'\nhdr_cells[1].text = 'Tema Principal'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[6].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[6].text = 'Computador, herramientas de diseño, software de prototipado, internet y documentación de marketing digital.'\nrow_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)\ntable_summary = document.add_table(rows=6, cols=3)\nhdr_cells = table_summary.rows[0].cells\nhdr_cells[0].text = 'Período'\nhdr_cells[1].text = 'Tema Principal'\nhdr_cells[2].text = 'Estándar Principal'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[7].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[7].text = 'El 65% de los estudiantes presentan propuestas de emprendimiento tecnológico viables y bien estructuradas.'\n# ---------------------------\n# Resumen por Períodos\ndocument.add_heading('Resumen por Períodos', level=1)\ntable_summary = document.add_table(rows=6, cols=3)\nhdr_cells = table_summary.rows[0].cells\nhdr_cells[0].text = 'Período'\nhdr_cells[1].text = 'Tema Principal'\nhdr_cells[2].text = 'Estándar Principal'\nrow_cells = table_summary.rows[1].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "table_summary",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "table_summary = document.add_table(rows=6, cols=3)\nhdr_cells = table_summary.rows[0].cells\nhdr_cells[0].text = 'Período'\nhdr_cells[1].text = 'Tema Principal'\nhdr_cells[2].text = 'Estándar Principal'\nrow_cells = table_summary.rows[1].cells\nrow_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells = table_summary.rows[0].cells\nhdr_cells[0].text = 'Período'\nhdr_cells[1].text = 'Tema Principal'\nhdr_cells[2].text = 'Estándar Principal'\nrow_cells = table_summary.rows[1].cells\nrow_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[0].text = 'Período'\nhdr_cells[1].text = 'Tema Principal'\nhdr_cells[2].text = 'Estándar Principal'\nrow_cells = table_summary.rows[1].cells\nrow_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[1].text = 'Tema Principal'\nhdr_cells[2].text = 'Estándar Principal'\nrow_cells = table_summary.rows[1].cells\nrow_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "hdr_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "hdr_cells[2].text = 'Estándar Principal'\nrow_cells = table_summary.rows[1].cells\nrow_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table_summary.rows[1].cells\nrow_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = '1'\nrow_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Fundamentos de JavaScript'\nrow_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Comprensión de sintaxis y estructuras básicas'\nrow_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table_summary.rows[2].cells\nrow_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = '2'\nrow_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'JavaScript Intermedio'\nrow_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Manipulación del DOM y funciones avanzadas'\nrow_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table_summary.rows[3].cells\nrow_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = '3'\nrow_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'JavaScript Avanzado'\nrow_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Programación asincrónica, APIs y POO'\nrow_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table_summary.rows[4].cells\nrow_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = '4'\nrow_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Proyecto Final'\nrow_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Desarrollo integral de una aplicación web interactiva'\nrow_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells = table_summary.rows[5].cells\nrow_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[0].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[0].text = 'Emprendimiento'\nrow_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[1].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[1].text = 'Emprendimiento Tecnológico'\nrow_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
+        "documentation": {}
+    },
+    {
+        "label": "row_cells[2].text",
+        "kind": 5,
+        "importPath": "emprend",
+        "description": "emprend",
+        "peekOfCode": "row_cells[2].text = 'Integración de competencias emprendedoras en proyectos web'\n# Save the document\ndocument.save('Plan_JS_Emprendimiento.docx')\nprint(\"El archivo 'Plan_JS_Emprendimiento.docx' ha sido generado exitosamente.\")",
+        "detail": "emprend",
         "documentation": {}
     },
     {
