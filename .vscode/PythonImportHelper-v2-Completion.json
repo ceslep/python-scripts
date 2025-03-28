@@ -1,5 +1,79 @@
 [
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "system",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Console",
+        "importPath": "rich.console",
+        "description": "rich.console",
+        "isExtraImport": true,
+        "detail": "rich.console",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "rich.table",
+        "description": "rich.table",
+        "isExtraImport": true,
+        "detail": "rich.table",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Back",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
         "label": "Document",
         "importPath": "docx",
         "description": "docx",
@@ -66,15 +140,6 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "load_dotenv",
         "importPath": "dotenv",
         "description": "dotenv",
@@ -107,6 +172,24 @@
         "importPath": "random",
         "description": "random",
         "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "mediapipe",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mediapipe",
+        "description": "mediapipe",
+        "detail": "mediapipe",
         "documentation": {}
     },
     {
@@ -166,6 +249,87 @@
         "description": "docx.enum.table",
         "isExtraImport": true,
         "detail": "docx.enum.table",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_datos",
+        "kind": 2,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "def obtener_datos():\n    dato1 = entry1.get()\n    dato2 = entry2.get()\n    print(\"Dato 1:\", dato1)\n    print(\"Dato 2:\", dato2)\n# Crear la ventana principal\nroot = tk.Tk()\nroot.title(\"Ingreso de Datos\")\n# Etiqueta y campo de entrada para el primer dato\nlabel1 = tk.Label(root, text=\"Dato 1:\")",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Ingreso de Datos\")\n# Etiqueta y campo de entrada para el primer dato\nlabel1 = tk.Label(root, text=\"Dato 1:\")\nlabel1.grid(row=0, column=0, padx=5, pady=5)\nentry1 = tk.Entry(root)\nentry1.grid(row=0, column=1, padx=5, pady=5)\n# Etiqueta y campo de entrada para el segundo dato\nlabel2 = tk.Label(root, text=\"Dato 2:\")\nlabel2.grid(row=1, column=0, padx=5, pady=5)",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "label1",
+        "kind": 5,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "label1 = tk.Label(root, text=\"Dato 1:\")\nlabel1.grid(row=0, column=0, padx=5, pady=5)\nentry1 = tk.Entry(root)\nentry1.grid(row=0, column=1, padx=5, pady=5)\n# Etiqueta y campo de entrada para el segundo dato\nlabel2 = tk.Label(root, text=\"Dato 2:\")\nlabel2.grid(row=1, column=0, padx=5, pady=5)\nentry2 = tk.Entry(root)\nentry2.grid(row=1, column=1, padx=5, pady=5)\n# Botón para enviar y procesar los datos",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "entry1",
+        "kind": 5,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "entry1 = tk.Entry(root)\nentry1.grid(row=0, column=1, padx=5, pady=5)\n# Etiqueta y campo de entrada para el segundo dato\nlabel2 = tk.Label(root, text=\"Dato 2:\")\nlabel2.grid(row=1, column=0, padx=5, pady=5)\nentry2 = tk.Entry(root)\nentry2.grid(row=1, column=1, padx=5, pady=5)\n# Botón para enviar y procesar los datos\nbutton = tk.Button(root, text=\"Enviar\", command=obtener_datos)\nbutton.grid(row=2, column=0, columnspan=2, pady=10)",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "label2",
+        "kind": 5,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "label2 = tk.Label(root, text=\"Dato 2:\")\nlabel2.grid(row=1, column=0, padx=5, pady=5)\nentry2 = tk.Entry(root)\nentry2.grid(row=1, column=1, padx=5, pady=5)\n# Botón para enviar y procesar los datos\nbutton = tk.Button(root, text=\"Enviar\", command=obtener_datos)\nbutton.grid(row=2, column=0, columnspan=2, pady=10)\n# Iniciar el loop de la interfaz\nroot.mainloop()",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "entry2",
+        "kind": 5,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "entry2 = tk.Entry(root)\nentry2.grid(row=1, column=1, padx=5, pady=5)\n# Botón para enviar y procesar los datos\nbutton = tk.Button(root, text=\"Enviar\", command=obtener_datos)\nbutton.grid(row=2, column=0, columnspan=2, pady=10)\n# Iniciar el loop de la interfaz\nroot.mainloop()",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "colors",
+        "description": "colors",
+        "peekOfCode": "button = tk.Button(root, text=\"Enviar\", command=obtener_datos)\nbutton.grid(row=2, column=0, columnspan=2, pady=10)\n# Iniciar el loop de la interfaz\nroot.mainloop()",
+        "detail": "colors",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "kind": 5,
+        "importPath": "conrich",
+        "description": "conrich",
+        "peekOfCode": "console = Console()\ntable = Table(title=\"Ejemplo de Tabla\")\ntable.add_column(\"Nombre\", style=\"cyan\", no_wrap=True)\ntable.add_column(\"Edad\", style=\"magenta\")\ntable.add_row(\"Alice\", \"30\")\ntable.add_row(\"Bob\", \"25\")\nconsole.print(table)\n# Texto con colores de primer plano (Fore) y fondo (Back)\nprint(Fore.RED + \"Este texto es rojo\")\nprint(Back.GREEN + \"Este texto tiene fondo verde\")",
+        "detail": "conrich",
+        "documentation": {}
+    },
+    {
+        "label": "table",
+        "kind": 5,
+        "importPath": "conrich",
+        "description": "conrich",
+        "peekOfCode": "table = Table(title=\"Ejemplo de Tabla\")\ntable.add_column(\"Nombre\", style=\"cyan\", no_wrap=True)\ntable.add_column(\"Edad\", style=\"magenta\")\ntable.add_row(\"Alice\", \"30\")\ntable.add_row(\"Bob\", \"25\")\nconsole.print(table)\n# Texto con colores de primer plano (Fore) y fondo (Back)\nprint(Fore.RED + \"Este texto es rojo\")\nprint(Back.GREEN + \"Este texto tiene fondo verde\")\n# Combina estilos y luego restablece al formato por defecto",
+        "detail": "conrich",
         "documentation": {}
     },
     {
@@ -1294,6 +1458,33 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "x = [[1, [3, 4, [1]]]]\ny = [[[1], [2]]]\nprint(x[0][1][2][0])\nprint(y[0][1][0])\nm = [[1,[2,1,3]]]\nprint(m[0][1][2])",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "y = [[[1], [2]]]\nprint(x[0][1][2][0])\nprint(y[0][1][0])\nm = [[1,[2,1,3]]]\nprint(m[0][1][2])",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "m = [[1,[2,1,3]]]\nprint(m[0][1][2])",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
         "label": "SMTP_SERVER",
         "kind": 5,
         "importPath": "inas",
@@ -1453,6 +1644,24 @@
         "description": "inas2",
         "peekOfCode": "css_style = \"\"\"\n<style>\ntable {\n    width: 100%;\n    border-collapse: collapse;\n    font-family: Arial, sans-serif;\n    margin-bottom: 20px;\n}\nth, td {\n    border: 1px solid #dee2e6;",
         "detail": "inas2",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "jerarquia",
+        "description": "jerarquia",
+        "peekOfCode": "x = [\"Rectoría\", [[\"Coordinación\", [\"Docentes\", [\"Mat\", \"Esp\", \"Fis\"]]]]]\nprint(x[1])\nprint(x[1][0])\nprint(x[1][0][1])\nprint(x[1][0][1][1])\nprint(x[1][0][1][1][2])\nmundo = [[\"America\", [\"del norte\", [\"del sur\", [[\"colombia\", [\"risaralda\"]]]]]]]\nprint(mundo[0][1][1][1][0][1][0])",
+        "detail": "jerarquia",
+        "documentation": {}
+    },
+    {
+        "label": "mundo",
+        "kind": 5,
+        "importPath": "jerarquia",
+        "description": "jerarquia",
+        "peekOfCode": "mundo = [[\"America\", [\"del norte\", [\"del sur\", [[\"colombia\", [\"risaralda\"]]]]]]]\nprint(mundo[0][1][1][1][0][1][0])",
+        "detail": "jerarquia",
         "documentation": {}
     },
     {
@@ -1633,6 +1842,51 @@
         "description": "laberinto",
         "peekOfCode": "ganaste = False\nwhile jugando:\n    reloj.tick(10)  # 10 FPS\n    for evento in pygame.event.get():\n        if evento.type == pygame.QUIT:\n            jugando = False\n        elif evento.type == pygame.KEYDOWN and not ganaste:\n            nueva_pos = pos_jugador.copy()\n            if evento.key == pygame.K_UP:\n                nueva_pos[1] -= 1",
         "detail": "laberinto",
+        "documentation": {}
+    },
+    {
+        "label": "estructura",
+        "kind": 5,
+        "importPath": "listysublist",
+        "description": "listysublist",
+        "peekOfCode": "estructura = [\n    \"nivel0\",\n    [\n        \"nivel1\",\n        [\n            \"nivel2\",\n            [\n                \"nivel3\",\n                \"dato_final\"\n            ],",
+        "detail": "listysublist",
+        "documentation": {}
+    },
+    {
+        "label": "mp_hands",
+        "kind": 5,
+        "importPath": "mano",
+        "description": "mano",
+        "peekOfCode": "mp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Iniciar la captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    success, frame = cap.read()\n    if not success:\n        break\n    # Convertir a RGB, ya que MediaPipe trabaja en este formato",
+        "detail": "mano",
+        "documentation": {}
+    },
+    {
+        "label": "hands",
+        "kind": 5,
+        "importPath": "mano",
+        "description": "mano",
+        "peekOfCode": "hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Iniciar la captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    success, frame = cap.read()\n    if not success:\n        break\n    # Convertir a RGB, ya que MediaPipe trabaja en este formato\n    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)",
+        "detail": "mano",
+        "documentation": {}
+    },
+    {
+        "label": "mp_draw",
+        "kind": 5,
+        "importPath": "mano",
+        "description": "mano",
+        "peekOfCode": "mp_draw = mp.solutions.drawing_utils\n# Iniciar la captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    success, frame = cap.read()\n    if not success:\n        break\n    # Convertir a RGB, ya que MediaPipe trabaja en este formato\n    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)\n    result = hands.process(frame_rgb)",
+        "detail": "mano",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "mano",
+        "description": "mano",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    success, frame = cap.read()\n    if not success:\n        break\n    # Convertir a RGB, ya que MediaPipe trabaja en este formato\n    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)\n    result = hands.process(frame_rgb)\n    # Si se detecta una mano\n    if result.multi_hand_landmarks:",
+        "detail": "mano",
         "documentation": {}
     },
     {
@@ -2083,6 +2337,51 @@
         "description": "nuevo1",
         "peekOfCode": "running = True\nwhile running:\n    dt = clock.tick(60) / 1000.0  # Control de FPS\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            running = False\n    # Lógica de movimiento\n    keys = pygame.key.get_pressed()\n    moving = False\n    nueva_pos = player_pos.copy()",
         "detail": "nuevo1",
+        "documentation": {}
+    },
+    {
+        "label": "face_cascade",
+        "kind": 5,
+        "importPath": "opencvpy",
+        "description": "opencvpy",
+        "peekOfCode": "face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')\n# Inicializar la detección de manos con MediaPipe\nmp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:",
+        "detail": "opencvpy",
+        "documentation": {}
+    },
+    {
+        "label": "mp_hands",
+        "kind": 5,
+        "importPath": "opencvpy",
+        "description": "opencvpy",
+        "peekOfCode": "mp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)",
+        "detail": "opencvpy",
+        "documentation": {}
+    },
+    {
+        "label": "hands",
+        "kind": 5,
+        "importPath": "opencvpy",
+        "description": "opencvpy",
+        "peekOfCode": "hands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)",
+        "detail": "opencvpy",
+        "documentation": {}
+    },
+    {
+        "label": "mp_draw",
+        "kind": 5,
+        "importPath": "opencvpy",
+        "description": "opencvpy",
+        "peekOfCode": "mp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)",
+        "detail": "opencvpy",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "opencvpy",
+        "description": "opencvpy",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)\n    for (x, y, w, h) in faces:\n        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)",
+        "detail": "opencvpy",
         "documentation": {}
     },
     {
@@ -2623,6 +2922,78 @@
         "description": "rifa",
         "peekOfCode": "hdr_cells[2].text = 'Teléfono'\n# Configurar la altura de cada fila de la tabla de forma fija (exacta)\nfor row in table.rows:\n    row.height = row_height\n    row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY\n# Rellenar la primera columna de las filas de participantes (filas 2 a 21)\nfor i in range(1, 21):\n    row_cells = table.rows[i].cells\n    row_cells[0].text = str(i)\n    # Las celdas \"Nombre\" y \"Teléfono\" se dejan en blanco para completarlas manualmente",
         "detail": "rifa",
+        "documentation": {}
+    },
+    {
+        "label": "crear_grilla",
+        "kind": 2,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "def crear_grilla():\n    try:\n        filas = int(entry_filas.get())\n        columnas = int(entry_columnas.get())\n    except ValueError:\n        print(\"Por favor ingrese valores numéricos válidos.\")\n        return\n    # Oculta la sección de ingreso de filas y columnas\n    frame_config.destroy()\n    # Crea un nuevo frame para la grilla",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Crear Grilla de Datos\")\n# Frame para pedir el número de filas y columnas\nframe_config = tk.Frame(root)\nframe_config.pack(padx=10, pady=10)\nlabel_filas = tk.Label(frame_config, text=\"Número de filas:\")\nlabel_filas.grid(row=0, column=0, padx=5, pady=5)\nentry_filas = tk.Entry(frame_config)\nentry_filas.grid(row=0, column=1, padx=5, pady=5)\nlabel_columnas = tk.Label(frame_config, text=\"Número de columnas:\")",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "frame_config",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "frame_config = tk.Frame(root)\nframe_config.pack(padx=10, pady=10)\nlabel_filas = tk.Label(frame_config, text=\"Número de filas:\")\nlabel_filas.grid(row=0, column=0, padx=5, pady=5)\nentry_filas = tk.Entry(frame_config)\nentry_filas.grid(row=0, column=1, padx=5, pady=5)\nlabel_columnas = tk.Label(frame_config, text=\"Número de columnas:\")\nlabel_columnas.grid(row=1, column=0, padx=5, pady=5)\nentry_columnas = tk.Entry(frame_config)\nentry_columnas.grid(row=1, column=1, padx=5, pady=5)",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "label_filas",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "label_filas = tk.Label(frame_config, text=\"Número de filas:\")\nlabel_filas.grid(row=0, column=0, padx=5, pady=5)\nentry_filas = tk.Entry(frame_config)\nentry_filas.grid(row=0, column=1, padx=5, pady=5)\nlabel_columnas = tk.Label(frame_config, text=\"Número de columnas:\")\nlabel_columnas.grid(row=1, column=0, padx=5, pady=5)\nentry_columnas = tk.Entry(frame_config)\nentry_columnas.grid(row=1, column=1, padx=5, pady=5)\nbtn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "entry_filas",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "entry_filas = tk.Entry(frame_config)\nentry_filas.grid(row=0, column=1, padx=5, pady=5)\nlabel_columnas = tk.Label(frame_config, text=\"Número de columnas:\")\nlabel_columnas.grid(row=1, column=0, padx=5, pady=5)\nentry_columnas = tk.Entry(frame_config)\nentry_columnas.grid(row=1, column=1, padx=5, pady=5)\nbtn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)\nroot.mainloop()",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "label_columnas",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "label_columnas = tk.Label(frame_config, text=\"Número de columnas:\")\nlabel_columnas.grid(row=1, column=0, padx=5, pady=5)\nentry_columnas = tk.Entry(frame_config)\nentry_columnas.grid(row=1, column=1, padx=5, pady=5)\nbtn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)\nroot.mainloop()",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "entry_columnas",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "entry_columnas = tk.Entry(frame_config)\nentry_columnas.grid(row=1, column=1, padx=5, pady=5)\nbtn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)\nroot.mainloop()",
+        "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "btn_crear",
+        "kind": 5,
+        "importPath": "tkint",
+        "description": "tkint",
+        "peekOfCode": "btn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)\nroot.mainloop()",
+        "detail": "tkint",
         "documentation": {}
     },
     {
