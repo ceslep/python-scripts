@@ -1,5 +1,69 @@
 [
     {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Back",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Back",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -39,38 +103,6 @@
         "description": "rich.table",
         "isExtraImport": true,
         "detail": "rich.table",
-        "documentation": {}
-    },
-    {
-        "label": "init",
-        "importPath": "colorama",
-        "description": "colorama",
-        "isExtraImport": true,
-        "detail": "colorama",
-        "documentation": {}
-    },
-    {
-        "label": "Fore",
-        "importPath": "colorama",
-        "description": "colorama",
-        "isExtraImport": true,
-        "detail": "colorama",
-        "documentation": {}
-    },
-    {
-        "label": "Back",
-        "importPath": "colorama",
-        "description": "colorama",
-        "isExtraImport": true,
-        "detail": "colorama",
-        "documentation": {}
-    },
-    {
-        "label": "Style",
-        "importPath": "colorama",
-        "description": "colorama",
-        "isExtraImport": true,
-        "detail": "colorama",
         "documentation": {}
     },
     {
@@ -193,6 +225,15 @@
         "documentation": {}
     },
     {
+        "label": "pyautogui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyautogui",
+        "description": "pyautogui",
+        "detail": "pyautogui",
+        "documentation": {}
+    },
+    {
         "label": "preguntas",
         "importPath": "preguntas",
         "description": "preguntas",
@@ -249,6 +290,33 @@
         "description": "docx.enum.table",
         "isExtraImport": true,
         "detail": "docx.enum.table",
+        "documentation": {}
+    },
+    {
+        "label": "text_colors",
+        "kind": 5,
+        "importPath": "colores",
+        "description": "colores",
+        "peekOfCode": "text_colors = [Fore.BLACK, Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE]\nbg_colors = [Back.BLACK, Back.RED, Back.GREEN, Back.YELLOW, Back.BLUE, Back.MAGENTA, Back.CYAN, Back.WHITE]\ncolor_names = ['BLACK', 'RED', 'GREEN', 'YELLOW', 'BLUE', 'MAGENTA', 'CYAN', 'WHITE']\n# Mostrar colores de texto\nprint(Style.BRIGHT + \"== Colores de texto ==\")\nfor color, name in zip(text_colors, color_names):\n    print(color + f\"Texto en {name}\")\n# Mostrar colores de fondo\nprint(Style.BRIGHT + \"\\n== Colores de fondo ==\")\nfor color, name in zip(bg_colors, color_names):",
+        "detail": "colores",
+        "documentation": {}
+    },
+    {
+        "label": "bg_colors",
+        "kind": 5,
+        "importPath": "colores",
+        "description": "colores",
+        "peekOfCode": "bg_colors = [Back.BLACK, Back.RED, Back.GREEN, Back.YELLOW, Back.BLUE, Back.MAGENTA, Back.CYAN, Back.WHITE]\ncolor_names = ['BLACK', 'RED', 'GREEN', 'YELLOW', 'BLUE', 'MAGENTA', 'CYAN', 'WHITE']\n# Mostrar colores de texto\nprint(Style.BRIGHT + \"== Colores de texto ==\")\nfor color, name in zip(text_colors, color_names):\n    print(color + f\"Texto en {name}\")\n# Mostrar colores de fondo\nprint(Style.BRIGHT + \"\\n== Colores de fondo ==\")\nfor color, name in zip(bg_colors, color_names):\n    print(color + f\" Fondo en {name} \", end=' ')  # Mostrar en una sola línea",
+        "detail": "colores",
+        "documentation": {}
+    },
+    {
+        "label": "color_names",
+        "kind": 5,
+        "importPath": "colores",
+        "description": "colores",
+        "peekOfCode": "color_names = ['BLACK', 'RED', 'GREEN', 'YELLOW', 'BLUE', 'MAGENTA', 'CYAN', 'WHITE']\n# Mostrar colores de texto\nprint(Style.BRIGHT + \"== Colores de texto ==\")\nfor color, name in zip(text_colors, color_names):\n    print(color + f\"Texto en {name}\")\n# Mostrar colores de fondo\nprint(Style.BRIGHT + \"\\n== Colores de fondo ==\")\nfor color, name in zip(bg_colors, color_names):\n    print(color + f\" Fondo en {name} \", end=' ')  # Mostrar en una sola línea\n    print(Style.RESET_ALL)  # Reseteo manual para separar",
+        "detail": "colores",
         "documentation": {}
     },
     {
@@ -319,7 +387,7 @@
         "kind": 5,
         "importPath": "conrich",
         "description": "conrich",
-        "peekOfCode": "console = Console()\ntable = Table(title=\"Ejemplo de Tabla\")\ntable.add_column(\"Nombre\", style=\"cyan\", no_wrap=True)\ntable.add_column(\"Edad\", style=\"magenta\")\ntable.add_row(\"Alice\", \"30\")\ntable.add_row(\"Bob\", \"25\")\nconsole.print(table)\n# Texto con colores de primer plano (Fore) y fondo (Back)\nprint(Fore.RED + \"Este texto es rojo\")\nprint(Back.GREEN + \"Este texto tiene fondo verde\")",
+        "peekOfCode": "console = Console()\ntable = Table(title=\"Ejemplo de Tabla\")\ntable.add_column(\"Nombre\", style=\"cyan\", no_wrap=True)\ntable.add_column(\"Edad\", style=\"magenta\")\ntable.add_column(\"Teléfono\", style=\"blue\")\ntable.add_row(\"Alice\", \"30\",\"\")\ntable.add_row(\"Bob\", \"25\",\"\")\ntable.add_row(\"Bobi\",\"\",\"3117966610\" )\nconsole.print(table)\n# Texto con colores de primer plano (Fore) y fondo (Back)",
         "detail": "conrich",
         "documentation": {}
     },
@@ -328,7 +396,7 @@
         "kind": 5,
         "importPath": "conrich",
         "description": "conrich",
-        "peekOfCode": "table = Table(title=\"Ejemplo de Tabla\")\ntable.add_column(\"Nombre\", style=\"cyan\", no_wrap=True)\ntable.add_column(\"Edad\", style=\"magenta\")\ntable.add_row(\"Alice\", \"30\")\ntable.add_row(\"Bob\", \"25\")\nconsole.print(table)\n# Texto con colores de primer plano (Fore) y fondo (Back)\nprint(Fore.RED + \"Este texto es rojo\")\nprint(Back.GREEN + \"Este texto tiene fondo verde\")\n# Combina estilos y luego restablece al formato por defecto",
+        "peekOfCode": "table = Table(title=\"Ejemplo de Tabla\")\ntable.add_column(\"Nombre\", style=\"cyan\", no_wrap=True)\ntable.add_column(\"Edad\", style=\"magenta\")\ntable.add_column(\"Teléfono\", style=\"blue\")\ntable.add_row(\"Alice\", \"30\",\"\")\ntable.add_row(\"Bob\", \"25\",\"\")\ntable.add_row(\"Bobi\",\"\",\"3117966610\" )\nconsole.print(table)\n# Texto con colores de primer plano (Fore) y fondo (Back)\nprint(Fore.RED + \"Este texto es rojo\")",
         "detail": "conrich",
         "documentation": {}
     },
@@ -2043,6 +2111,42 @@
         "documentation": {}
     },
     {
+        "label": "mp_hands",
+        "kind": 5,
+        "importPath": "movemouse",
+        "description": "movemouse",
+        "peekOfCode": "mp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Tamaño de pantalla\nscreen_width, screen_height = pyautogui.size()\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:",
+        "detail": "movemouse",
+        "documentation": {}
+    },
+    {
+        "label": "hands",
+        "kind": 5,
+        "importPath": "movemouse",
+        "description": "movemouse",
+        "peekOfCode": "hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Tamaño de pantalla\nscreen_width, screen_height = pyautogui.size()\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break",
+        "detail": "movemouse",
+        "documentation": {}
+    },
+    {
+        "label": "mp_draw",
+        "kind": 5,
+        "importPath": "movemouse",
+        "description": "movemouse",
+        "peekOfCode": "mp_draw = mp.solutions.drawing_utils\n# Tamaño de pantalla\nscreen_width, screen_height = pyautogui.size()\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Invertir imagen como espejo",
+        "detail": "movemouse",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "movemouse",
+        "description": "movemouse",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Invertir imagen como espejo\n    frame = cv2.flip(frame, 1)\n    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)\n    result = hands.process(frame_rgb)\n    frame_height, frame_width, _ = frame.shape",
+        "detail": "movemouse",
+        "documentation": {}
+    },
+    {
         "label": "draw_text",
         "kind": 2,
         "importPath": "mujer",
@@ -2340,20 +2444,11 @@
         "documentation": {}
     },
     {
-        "label": "face_cascade",
-        "kind": 5,
-        "importPath": "opencvpy",
-        "description": "opencvpy",
-        "peekOfCode": "face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')\n# Inicializar la detección de manos con MediaPipe\nmp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:",
-        "detail": "opencvpy",
-        "documentation": {}
-    },
-    {
         "label": "mp_hands",
         "kind": 5,
         "importPath": "opencvpy",
         "description": "opencvpy",
-        "peekOfCode": "mp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)",
+        "peekOfCode": "mp_hands = mp.solutions.hands\nhands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Puntas de los dedos: pulgar, índice, medio, anular, meñique\nfinger_tips_ids = [4, 8, 12, 16, 20]\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:",
         "detail": "opencvpy",
         "documentation": {}
     },
@@ -2362,7 +2457,7 @@
         "kind": 5,
         "importPath": "opencvpy",
         "description": "opencvpy",
-        "peekOfCode": "hands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)",
+        "peekOfCode": "hands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)\nmp_draw = mp.solutions.drawing_utils\n# Puntas de los dedos: pulgar, índice, medio, anular, meñique\nfinger_tips_ids = [4, 8, 12, 16, 20]\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break",
         "detail": "opencvpy",
         "documentation": {}
     },
@@ -2371,7 +2466,16 @@
         "kind": 5,
         "importPath": "opencvpy",
         "description": "opencvpy",
-        "peekOfCode": "mp_draw = mp.solutions.drawing_utils\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)",
+        "peekOfCode": "mp_draw = mp.solutions.drawing_utils\n# Puntas de los dedos: pulgar, índice, medio, anular, meñique\nfinger_tips_ids = [4, 8, 12, 16, 20]\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Efecto espejo",
+        "detail": "opencvpy",
+        "documentation": {}
+    },
+    {
+        "label": "finger_tips_ids",
+        "kind": 5,
+        "importPath": "opencvpy",
+        "description": "opencvpy",
+        "peekOfCode": "finger_tips_ids = [4, 8, 12, 16, 20]\n# Captura de video\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Efecto espejo\n    frame = cv2.flip(frame, 1)\n    # Convertir a RGB",
         "detail": "opencvpy",
         "documentation": {}
     },
@@ -2380,7 +2484,7 @@
         "kind": 5,
         "importPath": "opencvpy",
         "description": "opencvpy",
-        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detección de rostros (OpenCV)\n    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)\n    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4)\n    for (x, y, w, h) in faces:\n        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Efecto espejo\n    frame = cv2.flip(frame, 1)\n    # Convertir a RGB\n    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)\n    result = hands.process(frame_rgb)",
         "detail": "opencvpy",
         "documentation": {}
     },
