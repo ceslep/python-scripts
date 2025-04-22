@@ -9,8 +9,8 @@ tortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 
 tortuga.color("blue")     # Color para dibujar el polígono
 
 # Parámetros del polígono
-n_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)
-distancia = 100           # Longitud de cada lado
+n_lados = 12               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)
+distancia = 50           # Longitud de cada lado
 angulo = 360 / n_lados    # Ángulo de giro para un polígono regular
 
 # Lista para guardar los vértices

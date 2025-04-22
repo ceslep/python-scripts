@@ -1,5 +1,55 @@
 [
     {
+        "label": "turtle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle",
+        "description": "turtle",
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Back",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
         "label": "Fore",
         "importPath": "colorama",
         "description": "colorama",
@@ -81,12 +131,29 @@
         "documentation": {}
     },
     {
+        "label": "system",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "tkinter",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "tkinter",
         "description": "tkinter",
         "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "turtle,random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle.random",
+        "description": "turtle.random",
+        "detail": "turtle.random",
         "documentation": {}
     },
     {
@@ -198,12 +265,12 @@
         "documentation": {}
     },
     {
-        "label": "random",
+        "label": "turtle,random,keyboard",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
+        "importPath": "turtle.random.keyboard",
+        "description": "turtle.random.keyboard",
+        "detail": "turtle.random.keyboard",
         "documentation": {}
     },
     {
@@ -251,15 +318,6 @@
         "documentation": {}
     },
     {
-        "label": "turtle",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "turtle",
-        "description": "turtle",
-        "detail": "turtle",
-        "documentation": {}
-    },
-    {
         "label": "qrcode",
         "kind": 6,
         "isExtraImport": true,
@@ -290,6 +348,123 @@
         "description": "docx.enum.table",
         "isExtraImport": true,
         "detail": "docx.enum.table",
+        "documentation": {}
+    },
+    {
+        "label": "turtle,math,random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle.math.random",
+        "description": "turtle.math.random",
+        "detail": "turtle.math.random",
+        "documentation": {}
+    },
+    {
+        "label": "pantalla",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "pantalla = turtle.Screen()\npantalla.title(\"Lineas Curvas\")\ncolores = [\"red\", \"blue\", \"green\", \"yellow\", \"purple\", \"orange\"]\ntortuga = turtle.Turtle()\n# Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.speed(0)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\nancho = pantalla.window_width()\nalto = pantalla.window_height()\ncantidad = 30",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "colores",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "colores = [\"red\", \"blue\", \"green\", \"yellow\", \"purple\", \"orange\"]\ntortuga = turtle.Turtle()\n# Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.speed(0)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\nancho = pantalla.window_width()\nalto = pantalla.window_height()\ncantidad = 30\nmargen = 10\nxinicial = (-ancho // 2)+margen",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "tortuga",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "tortuga = turtle.Turtle()\n# Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.speed(0)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\nancho = pantalla.window_width()\nalto = pantalla.window_height()\ncantidad = 30\nmargen = 10\nxinicial = (-ancho // 2)+margen\nxfinal = (ancho // 2)-margen",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "ancho",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "ancho = pantalla.window_width()\nalto = pantalla.window_height()\ncantidad = 30\nmargen = 10\nxinicial = (-ancho // 2)+margen\nxfinal = (ancho // 2)-margen\nyinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "alto",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "alto = pantalla.window_height()\ncantidad = 30\nmargen = 10\nxinicial = (-ancho // 2)+margen\nxfinal = (ancho // 2)-margen\nyinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "cantidad",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "cantidad = 30\nmargen = 10\nxinicial = (-ancho // 2)+margen\nxfinal = (ancho // 2)-margen\nyinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "margen",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "margen = 10\nxinicial = (-ancho // 2)+margen\nxfinal = (ancho // 2)-margen\nyinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()\n    tortuga.goto(xinicial, yinicial-i*nlineas)",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "xinicial",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "xinicial = (-ancho // 2)+margen\nxfinal = (ancho // 2)-margen\nyinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()\n    tortuga.goto(xinicial, yinicial-i*nlineas)\n    tortuga.pendown()",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "xfinal",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "xfinal = (ancho // 2)-margen\nyinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()\n    tortuga.goto(xinicial, yinicial-i*nlineas)\n    tortuga.pendown()\n    tortuga.goto(xinicial+i*nlineas, yfinal)",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "yinicial",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "yinicial = (alto // 2)-margen\nyfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()\n    tortuga.goto(xinicial, yinicial-i*nlineas)\n    tortuga.pendown()\n    tortuga.goto(xinicial+i*nlineas, yfinal)\nturtle.done()",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "yfinal",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "yfinal = (-alto // 2)+margen\nnlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()\n    tortuga.goto(xinicial, yinicial-i*nlineas)\n    tortuga.pendown()\n    tortuga.goto(xinicial+i*nlineas, yfinal)\nturtle.done()",
+        "detail": "alineas",
+        "documentation": {}
+    },
+    {
+        "label": "nlineas",
+        "kind": 5,
+        "importPath": "alineas",
+        "description": "alineas",
+        "peekOfCode": "nlineas = ancho // cantidad\nfor i in range(2*nlineas):\n    tortuga.color(random.choice(colores))\n    tortuga.penup()\n    tortuga.goto(xinicial, yinicial-i*nlineas)\n    tortuga.pendown()\n    tortuga.goto(xinicial+i*nlineas, yfinal)\nturtle.done()",
+        "detail": "alineas",
         "documentation": {}
     },
     {
@@ -383,6 +558,33 @@
         "documentation": {}
     },
     {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "concentricos",
+        "description": "concentricos",
+        "peekOfCode": "screen = turtle.Screen()\nscreen.bgcolor(\"black\")\n# Crear la tortuga\npen = turtle.Turtle()\npen.speed(0)\npen.pensize(2)\nw, h = screen.window_width(), screen.window_height()\n# Colores para los cuadrados\ncolors = [\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\", \"cyan\", \"white\"]\n# Dibujar cuadrados concéntricos",
+        "detail": "concentricos",
+        "documentation": {}
+    },
+    {
+        "label": "pen",
+        "kind": 5,
+        "importPath": "concentricos",
+        "description": "concentricos",
+        "peekOfCode": "pen = turtle.Turtle()\npen.speed(0)\npen.pensize(2)\nw, h = screen.window_width(), screen.window_height()\n# Colores para los cuadrados\ncolors = [\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\", \"cyan\", \"white\"]\n# Dibujar cuadrados concéntricos\nfor side in range(0, w, 20):\n    pen.penup()\n    # Mover a la esquina superior izquierda del cuadrado",
+        "detail": "concentricos",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "concentricos",
+        "description": "concentricos",
+        "peekOfCode": "colors = [\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"purple\", \"cyan\", \"white\"]\n# Dibujar cuadrados concéntricos\nfor side in range(0, w, 20):\n    pen.penup()\n    # Mover a la esquina superior izquierda del cuadrado\n    pen.goto(-side/2, side/2)\n    pen.pendown()\n    pen.color(random.choice(colors))\n    for _ in range(4):\n        pen.forward(side)",
+        "detail": "concentricos",
+        "documentation": {}
+    },
+    {
         "label": "console",
         "kind": 5,
         "importPath": "conrich",
@@ -434,6 +636,42 @@
         "description": "constantes",
         "peekOfCode": "JUGADOR_SPEED = 9\nDELTA=10\nVELOCIDAD=100",
         "detail": "constantes",
+        "documentation": {}
+    },
+    {
+        "label": "ventana",
+        "kind": 5,
+        "importPath": "conturtle",
+        "description": "conturtle",
+        "peekOfCode": "ventana = turtle.Screen()\nventana.setup(width=500, height=500)\nventana.title(\"Dibujo con Turtle\")\nventana.bgcolor(\"lightblue\")\n# Crear la tortuga\nt = turtle.Turtle()\nt.color(\"darkgreen\")\nt.pensize(1)\nt.speed(2)\nancho = (ventana.window_width()) // 2",
+        "detail": "conturtle",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "conturtle",
+        "description": "conturtle",
+        "peekOfCode": "t = turtle.Turtle()\nt.color(\"darkgreen\")\nt.pensize(1)\nt.speed(2)\nancho = (ventana.window_width()) // 2\nj = 0\n# Dibujar una cuadrícula rápidamente con colores aleatorios\nt.speed(0)  # Establecer la velocidad al máximo\nfor x in range(-ancho,ancho,10):\n    t.color(random.random(), random.random(), random.random())  # Color aleatorio",
+        "detail": "conturtle",
+        "documentation": {}
+    },
+    {
+        "label": "ancho",
+        "kind": 5,
+        "importPath": "conturtle",
+        "description": "conturtle",
+        "peekOfCode": "ancho = (ventana.window_width()) // 2\nj = 0\n# Dibujar una cuadrícula rápidamente con colores aleatorios\nt.speed(0)  # Establecer la velocidad al máximo\nfor x in range(-ancho,ancho,10):\n    t.color(random.random(), random.random(), random.random())  # Color aleatorio\n    t.penup()\n    t.goto(-ancho,x)\n    t.pendown()\n    t.goto(x, ancho)",
+        "detail": "conturtle",
+        "documentation": {}
+    },
+    {
+        "label": "j",
+        "kind": 5,
+        "importPath": "conturtle",
+        "description": "conturtle",
+        "peekOfCode": "j = 0\n# Dibujar una cuadrícula rápidamente con colores aleatorios\nt.speed(0)  # Establecer la velocidad al máximo\nfor x in range(-ancho,ancho,10):\n    t.color(random.random(), random.random(), random.random())  # Color aleatorio\n    t.penup()\n    t.goto(-ancho,x)\n    t.pendown()\n    t.goto(x, ancho)\nfor x in range(-ancho,ancho,10):",
+        "detail": "conturtle",
         "documentation": {}
     },
     {
@@ -2700,7 +2938,7 @@
         "kind": 5,
         "importPath": "pturtle",
         "description": "pturtle",
-        "peekOfCode": "pantalla = turtle.Screen()\npantalla.title(\"Polígono con líneas al centro\")\ntortuga = turtle.Turtle()\ntortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\n# Parámetros del polígono\nn_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices",
+        "peekOfCode": "pantalla = turtle.Screen()\npantalla.title(\"Polígono con líneas al centro\")\ntortuga = turtle.Turtle()\ntortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\n# Parámetros del polígono\nn_lados = 12               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 50           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices",
         "detail": "pturtle",
         "documentation": {}
     },
@@ -2709,7 +2947,7 @@
         "kind": 5,
         "importPath": "pturtle",
         "description": "pturtle",
-        "peekOfCode": "tortuga = turtle.Turtle()\ntortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\n# Parámetros del polígono\nn_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO",
+        "peekOfCode": "tortuga = turtle.Turtle()\ntortuga.speed(3)          # Velocidad de la tortuga (1 = lento, 10 = rápido, 0 = sin animación)\ntortuga.color(\"blue\")     # Color para dibujar el polígono\n# Parámetros del polígono\nn_lados = 12               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 50           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO",
         "detail": "pturtle",
         "documentation": {}
     },
@@ -2718,7 +2956,7 @@
         "kind": 5,
         "importPath": "pturtle",
         "description": "pturtle",
-        "peekOfCode": "n_lados = 5               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado",
+        "peekOfCode": "n_lados = 12               # Cambia este valor para probar con distintos polígonos (3=triángulo, 4=cuadrado, etc.)\ndistancia = 50           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado",
         "detail": "pturtle",
         "documentation": {}
     },
@@ -2727,7 +2965,7 @@
         "kind": 5,
         "importPath": "pturtle",
         "description": "pturtle",
-        "peekOfCode": "distancia = 100           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)",
+        "peekOfCode": "distancia = 50           # Longitud de cada lado\nangulo = 360 / n_lados    # Ángulo de giro para un polígono regular\n# Lista para guardar los vértices\nvertices = []\n# DIBUJAR EL POLÍGONO\nfor _ in range(n_lados):\n    # Guardamos la posición actual (vértice)\n    vertices.append(tortuga.pos())\n    # Avanzamos y giramos para dibujar el siguiente lado\n    tortuga.forward(distancia)",
         "detail": "pturtle",
         "documentation": {}
     },
@@ -3029,6 +3267,24 @@
         "documentation": {}
     },
     {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "seno",
+        "description": "seno",
+        "peekOfCode": "screen = turtle.Screen()\nscreen.bgcolor(\"black\")\nscreen.title(\"Seno\")\nw, h = 800, 600\nscreen.setup(width=w, height=h)\nseno = turtle.Turtle()\nseno.speed(\"fastest\")\nseno.pensize(2)\nseno.color(\"cyan\")\nseno.penup()",
+        "detail": "seno",
+        "documentation": {}
+    },
+    {
+        "label": "seno",
+        "kind": 5,
+        "importPath": "seno",
+        "description": "seno",
+        "peekOfCode": "seno = turtle.Turtle()\nseno.speed(\"fastest\")\nseno.pensize(2)\nseno.color(\"cyan\")\nseno.penup()\nancho=(w//2)\nalto=(h//2-20)\nseno.goto(-ancho,0)\nseno.pendown()\nfor i in range(0,w,10):",
+        "detail": "seno",
+        "documentation": {}
+    },
+    {
         "label": "crear_grilla",
         "kind": 2,
         "importPath": "tkint",
@@ -3098,6 +3354,87 @@
         "description": "tkint",
         "peekOfCode": "btn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)\nroot.mainloop()",
         "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "ventana",
+        "kind": 5,
+        "importPath": "turtle_estrella",
+        "description": "turtle_estrella",
+        "peekOfCode": "ventana = turtle.Screen()\nventana.bgcolor(\"black\")\nventana.title(\"Dibujar una estrella personalizada\")\n# Crear el objeto tortuga\nestrella = turtle.Turtle()\nestrella.color(\"cyan\")\nestrella.pensize(2)\nestrella.speed(3)\ncolores=[\"red\", \"blue\", \"green\", \"yellow\", \"purple\", \"orange\"]\nlados = 20",
+        "detail": "turtle_estrella",
+        "documentation": {}
+    },
+    {
+        "label": "estrella",
+        "kind": 5,
+        "importPath": "turtle_estrella",
+        "description": "turtle_estrella",
+        "peekOfCode": "estrella = turtle.Turtle()\nestrella.color(\"cyan\")\nestrella.pensize(2)\nestrella.speed(3)\ncolores=[\"red\", \"blue\", \"green\", \"yellow\", \"purple\", \"orange\"]\nlados = 20\ntamaño = 200\nangulo=120\nestrella.speed(0)\nfor _ in range(lados):",
+        "detail": "turtle_estrella",
+        "documentation": {}
+    },
+    {
+        "label": "lados",
+        "kind": 5,
+        "importPath": "turtle_estrella",
+        "description": "turtle_estrella",
+        "peekOfCode": "lados = 20\ntamaño = 200\nangulo=120\nestrella.speed(0)\nfor _ in range(lados):\n        estrella.color(random.choice(colores))\n        estrella.forward(tamaño)\n        estrella.color(random.choice(colores))\n        estrella.circle(20)\n        estrella.right(100)",
+        "detail": "turtle_estrella",
+        "documentation": {}
+    },
+    {
+        "label": "tamaño",
+        "kind": 5,
+        "importPath": "turtle_estrella",
+        "description": "turtle_estrella",
+        "peekOfCode": "tamaño = 200\nangulo=120\nestrella.speed(0)\nfor _ in range(lados):\n        estrella.color(random.choice(colores))\n        estrella.forward(tamaño)\n        estrella.color(random.choice(colores))\n        estrella.circle(20)\n        estrella.right(100)\nestrella.penup()",
+        "detail": "turtle_estrella",
+        "documentation": {}
+    },
+    {
+        "label": "torre",
+        "kind": 2,
+        "importPath": "turtle_estructura",
+        "description": "turtle_estructura",
+        "peekOfCode": "def torre(x, y, altura):\n    estructura.penup()\n    estructura.goto(x, y)\n    estructura.pendown()\n    estructura.begin_fill()\n    for _ in range(2):\n        estructura.forward(40)\n        estructura.left(90)\n        estructura.forward(altura)\n        estructura.left(90)",
+        "detail": "turtle_estructura",
+        "documentation": {}
+    },
+    {
+        "label": "antena",
+        "kind": 2,
+        "importPath": "turtle_estructura",
+        "description": "turtle_estructura",
+        "peekOfCode": "def antena(x, y, largo):\n    estructura.penup()\n    estructura.goto(x + 20, y)\n    estructura.pendown()\n    estructura.color(\"white\")\n    estructura.forward(largo)\n    estructura.circle(3)\n    estructura.color(\"cyan\")\n# Función para dibujar un puente\ndef puente(x1, y1, x2, y2):",
+        "detail": "turtle_estructura",
+        "documentation": {}
+    },
+    {
+        "label": "puente",
+        "kind": 2,
+        "importPath": "turtle_estructura",
+        "description": "turtle_estructura",
+        "peekOfCode": "def puente(x1, y1, x2, y2):\n    estructura.penup()\n    estructura.goto(x1, y1)\n    estructura.pendown()\n    estructura.goto(x2, y2)\n# Dibujar torres principales\ntorre(-200, -150, 200)\nantena(-200, 50, 80)\ntorre(0, -150, 250)\nantena(0, 100, 100)",
+        "detail": "turtle_estructura",
+        "documentation": {}
+    },
+    {
+        "label": "pantalla",
+        "kind": 5,
+        "importPath": "turtle_estructura",
+        "description": "turtle_estructura",
+        "peekOfCode": "pantalla = turtle.Screen()\npantalla.bgcolor(\"black\")\npantalla.title(\"Superestructura Futurista\")\nestructura = turtle.Turtle()\nestructura.speed(0)\nestructura.color(\"cyan\")\nestructura.pensize(2)\n# Función para dibujar una torre\ndef torre(x, y, altura):\n    estructura.penup()",
+        "detail": "turtle_estructura",
+        "documentation": {}
+    },
+    {
+        "label": "estructura",
+        "kind": 5,
+        "importPath": "turtle_estructura",
+        "description": "turtle_estructura",
+        "peekOfCode": "estructura = turtle.Turtle()\nestructura.speed(0)\nestructura.color(\"cyan\")\nestructura.pensize(2)\n# Función para dibujar una torre\ndef torre(x, y, altura):\n    estructura.penup()\n    estructura.goto(x, y)\n    estructura.pendown()\n    estructura.begin_fill()",
+        "detail": "turtle_estructura",
         "documentation": {}
     },
     {
