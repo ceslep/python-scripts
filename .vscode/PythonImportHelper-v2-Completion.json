@@ -114,6 +114,38 @@
         "documentation": {}
     },
     {
+        "label": "Fore",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Back",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "colorama",
+        "description": "colorama",
+        "isExtraImport": true,
+        "detail": "colorama",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -186,6 +218,51 @@
         "description": "docx",
         "isExtraImport": true,
         "detail": "docx",
+        "documentation": {}
+    },
+    {
+        "label": "turtle,os,random,math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle.os.random.math",
+        "description": "turtle.os.random.math",
+        "detail": "turtle.os.random.math",
+        "documentation": {}
+    },
+    {
+        "label": "math,random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math.random",
+        "description": "math.random",
+        "detail": "math.random",
+        "documentation": {}
+    },
+    {
+        "label": "turtle,os,random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle.os.random",
+        "description": "turtle.os.random",
+        "detail": "turtle.os.random",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "turtle,os,math,random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turtle.os.math.random",
+        "description": "turtle.os.math.random",
+        "detail": "turtle.os.math.random",
         "documentation": {}
     },
     {
@@ -1764,6 +1841,24 @@
         "documentation": {}
     },
     {
+        "label": "draw_shape",
+        "kind": 2,
+        "importPath": "estrella5",
+        "description": "estrella5",
+        "peekOfCode": "def draw_shape(ancho,  offset_x=0, offset_y=0,relleno=False):\n        i=30\n        t.penup()\n        t.color(random.choice([\"red\", \"blue\", \"green\", \"purple\"]))\n        x = int(ancho * math.cos(math.radians(-i))) \n        y = int(ancho * math.sin(math.radians(-i))) \n        t.goto(offset_x+x, offset_y+y)\n        t.pendown()\n        if relleno:\n            t.begin_fill()",
+        "detail": "estrella5",
+        "documentation": {}
+    },
+    {
+        "label": "dibujar_figura",
+        "kind": 2,
+        "importPath": "estrellad",
+        "description": "estrellad",
+        "peekOfCode": "def dibujar_figura(radio, origen_x, origen_y, color):\n    # Calcular las coordenadas x e y\n    x = int(radio * math.cos(math.radians(-30)))\n    y = int(radio * math.sin(math.radians(-30)))\n    # Configurar el color del lápiz\n    t.color(color)\n    t.penup()\n    # Moverse al origen especificado\n    t.goto(origen_x, origen_y)\n    # Dibujar la figura",
+        "detail": "estrellad",
+        "documentation": {}
+    },
+    {
         "label": "x",
         "kind": 5,
         "importPath": "exam",
@@ -1788,6 +1883,69 @@
         "description": "exam",
         "peekOfCode": "m = [[1,[2,1,3]]]\nprint(m[0][1][2])",
         "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "dibujar_corazon",
+        "kind": 2,
+        "importPath": "figpara",
+        "description": "figpara",
+        "peekOfCode": "def dibujar_corazon(ancho=10, offset_x=0, offset_y=0):\n    t.penup()\n    t.goto(0, -ancho)  # Comienza un poco más abajo para centrar el corazón\n    t.begin_fill()  # Iniciar el relleno con el color seleccionado\n    c=random.choice(colors)  # Elegir un color aleatorio de la lista\n    t.fillcolor(c)  # Establecer el color de relleno a rojo\n    t.color(c)  # Establecer el color del borde a rojo\n    for t_val in range(0, 360,2):  # Usamos 360 grados para cubrir un ciclo completo\n        t_val = math.radians(t_val)  # Convertir grados a radianes\n        x = 16 * math.sin(t_val)**3",
+        "detail": "figpara",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "figpara",
+        "description": "figpara",
+        "peekOfCode": "t = turtle.Turtle()\nt.speed(0)\nt.width(2)\ncolors = [\"red\", \"blue\", \"green\", \"purple\", \"yellow\", \"orange\", \"pink\", \"cyan\", \"magenta\", \"lime\", \"brown\", \"gray\"]\n# Función para dibujar el corazón usando coordenadas paramétricas con relleno rojo\ndef dibujar_corazon(ancho=10, offset_x=0, offset_y=0):\n    t.penup()\n    t.goto(0, -ancho)  # Comienza un poco más abajo para centrar el corazón\n    t.begin_fill()  # Iniciar el relleno con el color seleccionado\n    c=random.choice(colors)  # Elegir un color aleatorio de la lista",
+        "detail": "figpara",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "figpara",
+        "description": "figpara",
+        "peekOfCode": "colors = [\"red\", \"blue\", \"green\", \"purple\", \"yellow\", \"orange\", \"pink\", \"cyan\", \"magenta\", \"lime\", \"brown\", \"gray\"]\n# Función para dibujar el corazón usando coordenadas paramétricas con relleno rojo\ndef dibujar_corazon(ancho=10, offset_x=0, offset_y=0):\n    t.penup()\n    t.goto(0, -ancho)  # Comienza un poco más abajo para centrar el corazón\n    t.begin_fill()  # Iniciar el relleno con el color seleccionado\n    c=random.choice(colors)  # Elegir un color aleatorio de la lista\n    t.fillcolor(c)  # Establecer el color de relleno a rojo\n    t.color(c)  # Establecer el color del borde a rojo\n    for t_val in range(0, 360,2):  # Usamos 360 grados para cubrir un ciclo completo",
+        "detail": "figpara",
+        "documentation": {}
+    },
+    {
+        "label": "sierpinski",
+        "kind": 2,
+        "importPath": "fractal",
+        "description": "fractal",
+        "peekOfCode": "def sierpinski(tortuga, orden, tamano):\n    if orden == 0:\n        for _ in range(3):\n            tortuga.forward(tamano)\n            tortuga.left(120)\n    else:\n        sierpinski(tortuga, orden-1, tamano/2)\n        tortuga.forward(tamano/2)\n        sierpinski(tortuga, orden-1, tamano/2)\n        tortuga.backward(tamano/2)",
+        "detail": "fractal",
+        "documentation": {}
+    },
+    {
+        "label": "pantalla",
+        "kind": 5,
+        "importPath": "fractal",
+        "description": "fractal",
+        "peekOfCode": "pantalla = turtle.Screen()\npantalla.bgcolor(\"white\")\ntortuga = turtle.Turtle()\ntortuga.speed(0)\n# Dibuja el Triángulo de Sierpinski de orden 4\nsierpinski(tortuga, 4, 200)\nturtle.done()",
+        "detail": "fractal",
+        "documentation": {}
+    },
+    {
+        "label": "tortuga",
+        "kind": 5,
+        "importPath": "fractal",
+        "description": "fractal",
+        "peekOfCode": "tortuga = turtle.Turtle()\ntortuga.speed(0)\n# Dibuja el Triángulo de Sierpinski de orden 4\nsierpinski(tortuga, 4, 200)\nturtle.done()",
+        "detail": "fractal",
+        "documentation": {}
+    },
+    {
+        "label": "circulo",
+        "kind": 2,
+        "importPath": "funciones1",
+        "description": "funciones1",
+        "peekOfCode": "def circulo(radio,centro_x,centro_y,grosor, color,relleno):\n    t.penup()\n    t.goto(centro_x,centro_y-radio)\n    t.pendown()\n    if relleno:\n        t.begin_fill()\n    t.color(color)\n    t.circle(radio)\n    if relleno:\n        t.end_fill()",
+        "detail": "funciones1",
         "documentation": {}
     },
     {
@@ -3015,6 +3173,33 @@
         "documentation": {}
     },
     {
+        "label": "colores",
+        "kind": 5,
+        "importPath": "recupera",
+        "description": "recupera",
+        "peekOfCode": "colores = [\n    (\"Rojo\", Back.RED),\n    (\"Verde\", Back.GREEN),\n    (\"Amarillo\", Back.YELLOW),\n    (\"Azul\", Back.BLUE),\n    (\"Magenta\", Back.MAGENTA),\n    (\"Cian\", Back.CYAN),\n    (\"Blanco\", Back.WHITE),\n    (\"Negro\", Back.BLACK),\n    (\"Gris claro\", Back.LIGHTBLACK_EX)",
+        "detail": "recupera",
+        "documentation": {}
+    },
+    {
+        "label": "ancho",
+        "kind": 5,
+        "importPath": "recupera",
+        "description": "recupera",
+        "peekOfCode": "ancho = 20\nalto = 3\n# Imprimir cada cuadro\nfor nombre, fondo in colores:\n    print(f\"{Style.BRIGHT}{nombre}:\")\n    for _ in range(alto):\n        print(fondo + \" \" * ancho + Style.RESET_ALL)\n    print()  # línea vacía entre cuadros",
+        "detail": "recupera",
+        "documentation": {}
+    },
+    {
+        "label": "alto",
+        "kind": 5,
+        "importPath": "recupera",
+        "description": "recupera",
+        "peekOfCode": "alto = 3\n# Imprimir cada cuadro\nfor nombre, fondo in colores:\n    print(f\"{Style.BRIGHT}{nombre}:\")\n    for _ in range(alto):\n        print(fondo + \" \" * ancho + Style.RESET_ALL)\n    print()  # línea vacía entre cuadros",
+        "detail": "recupera",
+        "documentation": {}
+    },
+    {
         "label": "document",
         "kind": 5,
         "importPath": "rifa",
@@ -3354,6 +3539,60 @@
         "description": "tkint",
         "peekOfCode": "btn_crear = tk.Button(frame_config, text=\"Crear Grilla\", command=crear_grilla)\nbtn_crear.grid(row=2, column=0, columnspan=2, pady=10)\nroot.mainloop()",
         "detail": "tkint",
+        "documentation": {}
+    },
+    {
+        "label": "dibujar_sombrero",
+        "kind": 2,
+        "importPath": "tttt",
+        "description": "tttt",
+        "peekOfCode": "def dibujar_sombrero():\n    tortuga.penup()\n    tortuga.goto(-100, -100)\n    tortuga.pendown()\n    tortuga.begin_fill()\n    tortuga.color(\"black\")\n    tortuga.circle(100, 180)  # Dibuja la base del sombrero (una semicírculo)\n    tortuga.end_fill()\n# Función para crear los detalles del sombrero vueltiao\ndef dibujar_detalles():",
+        "detail": "tttt",
+        "documentation": {}
+    },
+    {
+        "label": "dibujar_detalles",
+        "kind": 2,
+        "importPath": "tttt",
+        "description": "tttt",
+        "peekOfCode": "def dibujar_detalles():\n    tortuga.penup()\n    tortuga.goto(-100, -100)  # Regresa a la base del sombrero\n    tortuga.pendown()\n    tortuga.setheading(45)  # Cambia la orientación\n    tortuga.pensize(2)\n    # Dibujar líneas diagonales para simular el diseño tradicional del sombrero vueltiao\n    for i in range(8):\n        tortuga.forward(200)\n        tortuga.backward(200)",
+        "detail": "tttt",
+        "documentation": {}
+    },
+    {
+        "label": "dibujar_lineas_verticales",
+        "kind": 2,
+        "importPath": "tttt",
+        "description": "tttt",
+        "peekOfCode": "def dibujar_lineas_verticales():\n    tortuga.penup()\n    tortuga.goto(-80, -50)\n    tortuga.pendown()\n    tortuga.setheading(0)  # Alineamos las líneas verticalmente\n    tortuga.pensize(1)\n    # Dibujar líneas verticales para la textura del sombrero vueltiao\n    for _ in range(9):\n        tortuga.forward(200)\n        tortuga.backward(200)",
+        "detail": "tttt",
+        "documentation": {}
+    },
+    {
+        "label": "mensaje_cultural",
+        "kind": 2,
+        "importPath": "tttt",
+        "description": "tttt",
+        "peekOfCode": "def mensaje_cultural():\n    tortuga.penup()\n    tortuga.goto(-200, -200)\n    tortuga.pendown()\n    tortuga.write(\"El Sombrero Vueltiao es un símbolo\\n\"\n                   \"cultural de la afrocolombianidad.\\n\"\n                   \"Representa las tradiciones de la región\\n\"\n                   \"Caribe colombiana, especialmente en la\\n\"\n                   \"música, danza y la cultura cumbiera.\", font=(\"Arial\", 12, \"normal\"))\n# Dibujo del sombrero vueltiao",
+        "detail": "tttt",
+        "documentation": {}
+    },
+    {
+        "label": "pantalla",
+        "kind": 5,
+        "importPath": "tttt",
+        "description": "tttt",
+        "peekOfCode": "pantalla = turtle.Screen()\npantalla.bgcolor(\"white\")  # Fondo blanco\ntortuga = turtle.Turtle()\ntortuga.speed(5)  # Velocidad media\n# Función para dibujar el contorno del sombrero vueltiao\ndef dibujar_sombrero():\n    tortuga.penup()\n    tortuga.goto(-100, -100)\n    tortuga.pendown()\n    tortuga.begin_fill()",
+        "detail": "tttt",
+        "documentation": {}
+    },
+    {
+        "label": "tortuga",
+        "kind": 5,
+        "importPath": "tttt",
+        "description": "tttt",
+        "peekOfCode": "tortuga = turtle.Turtle()\ntortuga.speed(5)  # Velocidad media\n# Función para dibujar el contorno del sombrero vueltiao\ndef dibujar_sombrero():\n    tortuga.penup()\n    tortuga.goto(-100, -100)\n    tortuga.pendown()\n    tortuga.begin_fill()\n    tortuga.color(\"black\")\n    tortuga.circle(100, 180)  # Dibuja la base del sombrero (una semicírculo)",
+        "detail": "tttt",
         "documentation": {}
     },
     {
